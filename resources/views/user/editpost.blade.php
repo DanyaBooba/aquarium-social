@@ -15,23 +15,29 @@
             <h1>{{ __('Изменить пост') }} <span class="text-muted">{{ $post->idPost }}</span></h1>
         </div>
 
-
         <x-form.error-first />
 
-        <div class="addpost-container">
-            <x-addpost.post-change />
+        <div class="addpost-container" style="margin-top: 2rem">
+            @if (!$whiteList)
+                <x-addpost.post-change />
+            @endif
             <form action="{{ route('post.edit.store') }}" method="post">
                 @csrf
                 <input id="x" type="hidden" name="message">
                 <input type="hidden" name="idPost" value="{{ $post->idPost }}">
-                <trix-editor input="x" placeholder="{{ __('Сообщение') }}">{!! $post->message !!}</trix-editor>
-                <button type="submit" class="d-block btn btn-primary mt-3">
-                    {{ __('Изменить') }}
-                </button>
+                <trix-editor input="x" placeholder="{{ __('Сообщение') }}"
+                    autofocus>{!! $post->message !!}</trix-editor>
+                <div class="d-flex gap-3 mt-3">
+                    <div>
+                        <button type="submit" class="d-block btn btn-primary">
+                            {{ __('Изменить') }}
+                        </button>
+                    </div>
+                    <a href="{{ route('post.delete', $post->idPost) }}" class="btn btn-danger">
+                        {{ __('Удалить запись') }}
+                    </a>
+                </div>
             </form>
-            <button class="btn btn-danger mt-3" onclick="buttonOpenURL('{{ route('post.delete', $post->idPost) }}')">
-                {{ __('Удалить пост') }}
-            </button>
         </div>
     </div>
 @endsection

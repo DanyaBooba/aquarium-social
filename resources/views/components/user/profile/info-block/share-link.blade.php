@@ -7,7 +7,7 @@
     <span>
         {{ __('Поделитесь вашей ссылкой для регистрации.') }}
     </span>
-    <a href="#" onClick="buttonCopyURL('{{ $link }}')">
+    <a href="#" onClick="shareLink('{{ $link }}')">
         {{ __('Скопировать') }}
     </a>
 </x-user.profile.info-block>

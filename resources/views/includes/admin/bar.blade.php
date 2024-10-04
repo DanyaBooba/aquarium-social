@@ -14,4 +14,9 @@
             жалобы
         </a>
     </li>
+    <li>
+        <a href="{{ route('admin.emails') }}">
+            письма
+        </a>
+    </li>
 </ul>

@@ -4,8 +4,6 @@ use App\Http\Controllers\User\ComplainController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\User\ExitController;
 use App\Http\Controllers\User\DeleteController;
-use App\Http\Controllers\User\Post\AddPostController;
-use App\Http\Controllers\User\Post\EditPostController;
 use App\Http\Controllers\User\Post\ImportPostController;
 use App\Http\Controllers\User\Second\SecondAccountController;
 use App\Http\Controllers\User\SubscribeController;

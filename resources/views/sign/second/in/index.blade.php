@@ -12,7 +12,7 @@
 
     <x-form.error-first />
 
-    <div id="signin-choose-yandex">
+    {{-- <div id="signin-choose-yandex">
         <button class="btn fs-5" onClick="buttonOpenURL('{{ $yandexUri }}')">
             <x-sign.logo.yandex />
         </button>
@@ -33,6 +33,20 @@
                 <x-sign.logo.github />
             </button>
         </div>
+    </div> --}}
+    <div class="row row-cols-2 flex-wrap gx-2 mb-0">
+        <div id="signin-choose-yandex" style="flex: 1">
+            <button class="btn fs-5" onClick="buttonOpenURL('{{ $yandexUri }}')">
+                <x-sign.logo.yandex />
+            </button>
+        </div>
+        <div id="signin-choose-google" style="max-width: 100px">
+            <button class="btn fs-5" onClick="buttonOpenURL('{{ $vkUri }}')" style="height: 100%">
+                <x-sign.logo.vk />
+            </button>
+        </div>
+        <div class="d-none">Google: {{ $googleUri }}</div>
+        <div class="d-none">GitHub: {{ $githubUri }}</div>
     </div>
     <x-sign.choose-or />
     <div id="signin-choose-email">

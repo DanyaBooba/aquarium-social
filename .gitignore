@@ -23,4 +23,4 @@ yarn-error.log
 /app
 /resources/views/admin
 /resources/views/layouts/admin
-/routes/admin.php
+/routes/admin/admin.php

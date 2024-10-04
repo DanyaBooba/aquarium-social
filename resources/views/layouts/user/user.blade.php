@@ -17,7 +17,7 @@
                 @include('includes.user.header')
                 @yield('user.alert')
                 <section class="py-3">
-                    <div class="container">
+                    <div class="container px-0">
                         @yield('user.content')
                     </div>
                 </section>

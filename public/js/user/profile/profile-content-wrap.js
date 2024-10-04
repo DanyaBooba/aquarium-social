@@ -13,4 +13,4 @@ function profileContentDetectWrap() {
     }
 }
 
-profileContentDetectWrap()
+// profileContentDetectWrap()

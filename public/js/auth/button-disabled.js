@@ -1,5 +1,5 @@
 let inputs = document.querySelectorAll("#signin-email form input");
-let button = document.querySelector("#signin-email form button[type='submit']");
+let button = document.querySelector("#signin-email form button:not(.button-submit-code)[type='submit']");
 
 function checkFormInput() {
     let status = true;
@@ -35,4 +35,4 @@ function checkOnInput() {
     }
 }
 
-checkOnInput();
+checkOnInput()

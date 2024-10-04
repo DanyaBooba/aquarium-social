@@ -131,6 +131,10 @@
     background-color: var(--settings-background-session);
 }
 
+.container-settings .container-settings-main ul li a.settings-services > svg {
+    background-color: var(--settings-background-services);
+}
+
 /* media */
 
 @media(min-width: 575.98px) {

@@ -8,4 +8,9 @@ table.table-hover tbody tr:hover {
 
 table {
     border-color: var(--table-border) !important;
+    margin-bottom: 1rem;
+}
+
+table thead {
+    border-color: var(--table-thead) !important;
 }

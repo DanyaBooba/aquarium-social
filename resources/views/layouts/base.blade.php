@@ -36,7 +36,7 @@
     <meta name="google" content="nositelinkssearchbox">
     {{-- <meta name="format-detection" content="phone=no, address=no"> --}}
 
-    <title>@yield('page.title', config('app.name')) – {{ __('Аквариум') }}</title>
+    <title>@yield('page.title', config('app.name')) · {{ __('Аквариум') }}</title>
 
     <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
     <script>

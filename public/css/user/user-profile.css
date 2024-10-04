@@ -96,13 +96,14 @@
     min-width: 150px;
     width: 150px;
     height: 150px;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
 
     border-radius: 50%;
 }
 
-.user-profile .user-profile-image:has(:not(.user-profile-image-service)) {
+/* .user-profile .user-profile-image:has(:not(.user-profile-image-service)) {
     border: .1rem solid var(--user-profile-image-border);
-}
+} */
 
 .user-profile .user-profile-image img {
     max-width: 100%;
@@ -155,7 +156,8 @@
 
 .user-profile img.user-profile-cap {
     width: 100% !important;
-    height: 400px;
+    aspect-ratio: 2 / 1;
+    /* height: 400px; */
     object-fit: cover;
 
     border-top-left-radius: 12px;
@@ -204,8 +206,8 @@
 } */
 
 .user-profile .user-profile-buttons button:disabled {
-    background-color: var(--body-bg);
-    outline: .2rem var(--user-profile-button) dashed;
+    background-color: var(--user-profile-button-disabled);
+    /* outline: .2rem var(--user-profile-button) dashed; */
     margin-right: .75rem;
 }
 
@@ -247,14 +249,14 @@
     /* text-overflow: ellipsis; */
 }
 
+.container {
+    padding-left: .6rem !important;
+    padding-right: .6rem !important;
+}
+
 /* media */
 
 @media(max-width: 860px) {
-    .container {
-        padding-left: .6rem !important;
-        padding-right: .6rem !important;
-    }
-
     .user-profile-content {
         flex-direction: column;
         padding-left: 1rem !important;
@@ -317,13 +319,21 @@
     box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
 }
 
+@media(min-width: 1200px) {
+    .user-profile .user-profile-buttons button#buttonProfileInfo {
+        display: none !important;
+    }
+}
+
+@media(max-width: 1199.98px) {
+    .user-profile .user-profile-right {
+        display: none !important;
+    }
+}
+
 @media(hover: hover) {
     .user-profile .user-profile-buttons button:not(:disabled):hover {
         background-color: var(--user-profile-button-hover);
-    }
-
-    .user-profile .user-profile-buttons button.button__accent:hover {
-        background-color: var(--user-profile-button-accent-hover) !important;
     }
 
     .user-profile .user-profile-right div button:hover {

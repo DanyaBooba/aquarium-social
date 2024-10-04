@@ -24,7 +24,7 @@ h3.title-anchor a svg,
 h4.title-anchor a svg,
 h5.title-anchor a svg,
 h6.title-anchor a svg {
-    margin-bottom: .1rem;
+    margin-bottom: .5rem;
 }
 
 h2.title-anchor a:is(:focus, :focus-visible, :focus-within),

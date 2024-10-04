@@ -9,12 +9,6 @@
         <p>
             {{ __('Участвуйте в жизни социальной сети и получайте за это достижения!') }}
         </p>
-        <p>
-            {{ __('Первое достижение вы можете получить за подписку на ') }}
-            <a href="//aquariumsocial.t.me" target="_blank">
-                {{ __('Телеграм-канал') }}.
-            </a>
-        </p>
     @else
         <div class="list-achievements row row-cols-md-3">
             @foreach ($achievements as $item)

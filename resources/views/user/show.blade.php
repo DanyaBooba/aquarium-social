@@ -1,6 +1,6 @@
 @extends('layouts.user.user')
 
-@section('page.title', __('Профиль'))
+@section('page.title', $profile->name)
 
 @section('user.alert')
     @if ($itsme)
@@ -16,6 +16,7 @@
             {{ __('Почта человека не подтверждена, профиль виден из-за того, что вы администратор') }}
         </x-user.alert.alert>
     @endif
+
     @if ($alert = session()->pull('alert.success'))
         <x-user.alert.alert-success :title="$alert" />
     @endif
@@ -25,7 +26,13 @@
 
     <x-user.profile :profile="$profile" :issub=$issub :itsme=$itsme />
     <x-user.profile.modal :listData="$listData" />
-    <x-user.profile.posts :posts="$posts" />
+
+    <x-user.profile.posts-show :local="false" :posts="$posts" :count="$countAllPosts" />
+
     <x-user.profile.toasts />
 
 @endsection
+
+@push('js')
+    <script src={{ asset('js/user/share-link.js') }}></script>
+@endpush

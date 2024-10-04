@@ -19,6 +19,10 @@ div .col-7 li {
     margin-bottom: 0.5rem;
 }
 
+div .col-7 {
+    word-wrap: break-word;
+}
+
 .accordion .accordion-item {
     background-color: var(--collapse-body-background) !important;
     border-color: var(--collapse-border) !important;

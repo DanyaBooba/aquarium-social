@@ -12,10 +12,6 @@ header.header {
     transition: transform .3s linear;
 }
 
-header.header.hide {
-    transform: translateY(-234px);
-}
-
 header.header {
     margin-bottom: 1rem;
 }
@@ -200,6 +196,10 @@ header.header .header-content button.navbar-toggler {
         background-color: var(--header-link-active);
         border-radius: 8px;
     }
+
+    header.header.hide {
+        transform: translateY(-400px);
+    }
 }
 
 @media(max-width: 575.98px) {
@@ -223,6 +223,10 @@ header.header .header-content button.navbar-toggler {
 
     header.header .header-content-links {
         align-items: center;
+    }
+
+    header.header.hide {
+        transform: translateY(-100px);
     }
 }
 

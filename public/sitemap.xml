@@ -6,8 +6,118 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://aquarium.org.ru/</loc>
-  <lastmod>2024-05-25T12:00:00+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://aquariumsocial.ru/</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/about</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/faq</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/about/history</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/blog</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/about/smi</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/about/api</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/about/oauth</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/signin</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/get</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/signup</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/about/terms/privacy</loc>
+	<lastmod>2024-08-01T17:10:30+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/about/tech</loc>
+	<lastmod>2024-08-01T17:10:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/about/brand</loc>
+	<lastmod>2024-08-01T17:10:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/signin/email</loc>
+	<lastmod>2024-08-01T17:10:34+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/signup/email</loc>
+	<lastmod>2024-08-01T17:10:34+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/user</loc>
+	<lastmod>2024-08-01T17:10:37+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/sign/help</loc>
+	<lastmod>2024-08-01T17:10:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/user/exit</loc>
+	<lastmod>2024-08-01T17:10:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/user/notifications</loc>
+	<lastmod>2024-08-01T17:10:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/post/add</loc>
+	<lastmod>2024-08-01T17:10:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/user/settings</loc>
+	<lastmod>2024-08-01T17:10:37+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://aquariumsocial.ru/sign/code</loc>
+	<lastmod>2024-08-01T17:10:38+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 </urlset>

@@ -9,27 +9,19 @@
 @endsection
 
 @section('auth.sign')
-    <div id="signin-choose-yandex">
-        <button class="btn fs-5" onClick="buttonOpenURL('{{ $yandexUri }}')">
-            <x-sign.logo.yandex />
-        </button>
-    </div>
-    <div class="row row-cols-3 gx-2 mb-0">
-        <div id="signin-choose-google">
-            <button class="btn fs-5" onClick="buttonOpenURL('{{ $vkUri }}')">
+    <div class="row row-cols-2 flex-wrap gx-2 mb-0">
+        <div id="signin-choose-yandex" style="flex: 1">
+            <button class="btn fs-5" onClick="buttonOpenURL('{{ $yandexUri }}')">
+                <x-sign.logo.yandex />
+            </button>
+        </div>
+        <div id="signin-choose-google" style="max-width: 100px">
+            <button class="btn fs-5" onClick="buttonOpenURL('{{ $vkUri }}')" style="height: 100%">
                 <x-sign.logo.vk />
             </button>
         </div>
-        <div id="signin-choose-google">
-            <button class="btn fs-5" onClick="buttonOpenURL('{{ $googleUri }}')">
-                <x-sign.logo.google />
-            </button>
-        </div>
-        <div id="signin-choose-google">
-            <button class="btn fs-5" onClick="buttonOpenURL('{{ $githubUri }}')">
-                <x-sign.logo.github />
-            </button>
-        </div>
+        <div class="d-none">Google: {{ $googleUri }}</div>
+        <div class="d-none">GitHub: {{ $githubUri }}</div>
     </div>
     <x-sign.choose-or />
     <div id="signin-choose-email">

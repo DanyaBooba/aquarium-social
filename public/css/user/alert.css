@@ -54,6 +54,10 @@
 .alert.alert-success {
     background-color: var(--user-alert-success-bg) !important;
     justify-content: center;
+    border-radius: 8px !important;
+    margin-top: 1rem;
+    /* margin-left: .6rem !important;
+    margin-right: .6rem !important; */
 
     transition: 1s;
 }

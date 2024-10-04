@@ -98,13 +98,15 @@
     --user-profile-image-border: #d9d9e0;
     --user-profile-button: #fff;
     --user-profile-button-accent-text: #fff;
-    --user-profile-button-hover: #ebebeb;
+    --user-profile-button-hover: #f8f8f8;
+    --user-profile-button-disabled: #ffffffaa;
+    --user-profile-addpost-bg: #fff;
 
     /* User Search */
 
     --user-search-border: #ced4db;
     --user-search-background: #f9f9f9;
-    --user-search-background-hover: #f1f1f4;
+    --user-search-background-hover: #fff;
     --user-search-button-background: #c9daeb;
 
     /* User Alert */
@@ -120,9 +122,11 @@
 
     /* User Add Post */
 
-    --addpost-moderate-bg: #ececec;
+    --addpost-moderate-bg: #edeef2;
     --addpost-import-bg: #dbd4ff;
     --addpost-import-bg-55: #dbd4ff55;
+    --addpost-button-link-bg: #e2e8ec;
+    --addpost-dialog-bg: #fff;
 
     /* Settings */
 
@@ -133,6 +137,7 @@
     --settings-background-home: #576574;
     --settings-background-exit: #e84118;
     --settings-background-session: #10ac84;
+    --settings-background-services: #5058dd;
     --settings-background-notifications: #ee5253;
     --settings-background-privacy: #0097e6;
     --settings-background-data: #0be881;
@@ -141,6 +146,10 @@
     --settings-image-active: #0984e3;
     --settings-bg-hover: #efefef;
     --settings-icon-right: #a5a5a5;
+
+    /* Notifications */
+
+    --notifications-list-border: #C4C9EA;
 
     /* Button Top */
 
@@ -172,6 +181,7 @@
     --trix-button-accent: #4e96ff;
     --table-border: #dde1e8;
     --table-tr-hover: #dde1e8;
+    --table-thead: #dde1e8;
 
     /* Mark */
 

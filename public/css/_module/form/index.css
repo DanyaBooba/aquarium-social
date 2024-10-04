@@ -4,7 +4,7 @@ form input[type="text"],
 form input[type="number"],
 form input[type="search"],
 form textarea {
-    background: var(--body-bg);
+    background: var(--form-input-background);
     color: var(--text-color) !important;
     border: .1rem solid var(--form-input-border) !important;
 }

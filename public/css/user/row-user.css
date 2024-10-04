@@ -4,6 +4,7 @@
 
 .row-user-bar {
     padding: 0;
+    background-color: var(--body-bg) !important;
 }
 
 .row-user-bar-container {
@@ -93,6 +94,7 @@
 .row-user-content {
     max-width: 880px !important;
     padding: 0 !important;
+    background-color: var(--body-bg) !important;
 }
 
 /* media */

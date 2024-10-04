@@ -1,3 +1,11 @@
+main.row-user-content .container h2:first-of-type {
+    margin-top: 2rem;
+}
+
+main.row-user-content .container h2 {
+    margin-top: 1rem;
+}
+
 main.row-user-content header {
     margin-top: .75rem;
     margin-bottom: .75rem;

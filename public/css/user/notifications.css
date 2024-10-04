@@ -37,6 +37,15 @@
     height: 20px;
 }
 
+.user-notifications ul li {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+}
+
+.list-group-item {
+    border: 1px solid var(--notifications-list-border);
+}
+
 /* media */
 
 @media(min-width: 1023.98px) {

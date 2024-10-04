@@ -1,3 +1,39 @@
+trix-toolbar .trix-button--icon-bold::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12h9a4 4 0 0 1 0 8H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a4 4 0 0 1 0 8'/%3E%3C/svg%3E") !important;
+}
+
+trix-toolbar .trix-button--icon-italic::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-italic'%3E%3Cline x1='19' x2='10' y1='4' y2='4'/%3E%3Cline x1='14' x2='5' y1='20' y2='20'/%3E%3Cline x1='15' x2='9' y1='4' y2='20'/%3E%3C/svg%3E") !important;
+}
+
+trix-toolbar .trix-button--icon-strike::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-strikethrough'%3E%3Cpath d='M16 4H9a3 3 0 0 0-2.83 4'/%3E%3Cpath d='M14 12a4 4 0 0 1 0 8H6'/%3E%3Cline x1='4' x2='20' y1='12' y2='12'/%3E%3C/svg%3E") !important;
+}
+
+trix-toolbar .trix-button--icon-link::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-link'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/%3E%3C/svg%3E") !important;
+}
+
+trix-toolbar .trix-button--icon-heading-1::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-a-large-small'%3E%3Cpath d='M21 14h-5'/%3E%3Cpath d='M16 16v-3.5a2.5 2.5 0 0 1 5 0V16'/%3E%3Cpath d='M4.5 13h6'/%3E%3Cpath d='m3 16 4.5-9 4.5 9'/%3E%3C/svg%3E") !important;
+}
+
+trix-toolbar .trix-button--icon-bullet-list::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-list'%3E%3Cline x1='8' x2='21' y1='6' y2='6'/%3E%3Cline x1='8' x2='21' y1='12' y2='12'/%3E%3Cline x1='8' x2='21' y1='18' y2='18'/%3E%3Cline x1='3' x2='3.01' y1='6' y2='6'/%3E%3Cline x1='3' x2='3.01' y1='12' y2='12'/%3E%3Cline x1='3' x2='3.01' y1='18' y2='18'/%3E%3C/svg%3E") !important;
+}
+
+trix-toolbar .trix-button--icon-number-list::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-list-ordered'%3E%3Cline x1='10' x2='21' y1='6' y2='6'/%3E%3Cline x1='10' x2='21' y1='12' y2='12'/%3E%3Cline x1='10' x2='21' y1='18' y2='18'/%3E%3Cpath d='M4 6h1v4'/%3E%3Cpath d='M4 10h2'/%3E%3Cpath d='M6 18H4c0-1 2-2 2-3s-1-1.5-2-1'/%3E%3C/svg%3E") !important;
+}
+
+trix-toolbar .trix-button--icon-undo::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-undo-2'%3E%3Cpath d='M9 14 4 9l5-5'/%3E%3Cpath d='M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11'/%3E%3C/svg%3E") !important;
+}
+
+trix-toolbar .trix-button--icon-redo::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-redo-2'%3E%3Cpath d='m15 14 5-5-5-5'/%3E%3Cpath d='M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13'/%3E%3C/svg%3E") !important;
+}
+
 trix-toolbar button.trix-button--icon-quote {
     display: none !important;
 }
@@ -10,8 +46,50 @@ trix-toolbar button.trix-button--icon-attach {
     display: none !important;
 }
 
+trix-toolbar button.trix-button--icon-decrease-nesting-level {
+    display: none !important;
+}
+
+trix-toolbar button.trix-button--icon-increase-nesting-level {
+    display: none !important;
+}
+
 trix-toolbar .trix-button-group {
     border: none !important;
+}
+
+trix-toolbar .trix-button-group {
+    gap: .25rem !important;
+}
+
+trix-toolbar .trix-dialog--link {
+    max-width: 100% !important;
+}
+
+trix-toolbar .trix-dialog {
+    background-color: var(--addpost-dialog-bg) !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    border-radius: 6px !important;
+    border-top: none !important;
+    padding: 1rem !important;
+}
+
+trix-toolbar .trix-dialog input[type=button] {
+    color: var(--text-color) !important;
+    border: none !important;
+    font-size: 14px !important;
+    background-color: var(--addpost-button-link-bg) !important;
+    padding: .5rem 1rem !important;
+}
+
+trix-toolbar .trix-dialog input[data-trix-method=removeAttribute] {
+    display: none !important;
+}
+
+trix-toolbar .trix-dialog input[type=url] {
+    color: var(--text-color) !important;
+    font-size: 14px !important;
+    border: .1rem solid var(--form-input-border);
 }
 
 trix-toolbar .trix-button.trix-active {
