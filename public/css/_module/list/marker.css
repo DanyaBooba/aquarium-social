@@ -1,7 +1,7 @@
 ul li::marker {
-    color: var(--list-marker-color) !important;
+    color: var(--color-body-plane-4) !important;
 }
 
 ol li::marker {
-    color: var(--list-marker-color) !important;
+    color: var(--color-body-plane-4) !important;
 }

@@ -3,13 +3,13 @@
 }
 
 .user-notifications .accordion .accordion-item {
-    background-color: var(--collapse-body-background) !important;
-    border-color: var(--collapse-border) !important;
+    background-color: var(--collapse-body-bg) !important;
+    border-color: var(--header-border) !important;
 }
 
 .user-notifications .accordion .accordion-item .accordion-header button {
-    background-color: var(--collapse-button-background) !important;
-    color: var(--text-color) !important;
+    background-color: var(--color-body-plane) !important;
+    color: var(--text) !important;
 }
 
 .user-notifications .accordion .accordion-item .accordion-header button::after {
@@ -39,17 +39,17 @@
 
 .user-notifications ul li {
     background-color: transparent !important;
-    color: var(--text-color) !important;
+    color: var(--text) !important;
 }
 
-.list-group-item {
+/* .list-group-item {
     border: 1px solid var(--notifications-list-border);
-}
+} */
 
 /* media */
 
 @media(min-width: 1023.98px) {
     .user-notifications {
-        max-width: 70%;
+        height: 80vh;
     }
 }

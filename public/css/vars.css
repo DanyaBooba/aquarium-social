@@ -1,3 +1,17 @@
 :root {
-    --border-radius-default: 8px;
+    --border-radius-default: 12px;
+
+    --user-bar-exit: #dd303f;
+    --text-muted: #6c757d;
+
+    --settings-bg-profile: #718093;
+    --settings-bg-home: #576574;
+    --settings-bg-exit: #e84118;
+    --settings-bg-session: #10ac84;
+    --settings-bg-services: #5058dd;
+    --settings-bg-notifications: #ee5253;
+    --settings-bg-privacy: #0097e6;
+    --settings-bg-data: #0be881;
+    --settings-bg-devices: #ffa801;
+    --settings-bg-personalization: #cd84f1;
 }

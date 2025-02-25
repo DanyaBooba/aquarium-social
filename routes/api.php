@@ -1,11 +1,10 @@
 <?php
 
-use App\Http\Controllers\Api\ApiAppController;
-use App\Http\Controllers\Api\ApiController;
-use App\Http\Controllers\Api\ApiPostsController;
-use App\Http\Controllers\Api\ApiUserController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Api\User\Posts\ApiPostsController;
+use App\Http\Controllers\Api\App\Auth\ApiSigninController;
+use App\Http\Controllers\Api\User\ApiUserController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 // Users
 
@@ -31,9 +30,11 @@ Route::prefix('/')->group(function () {
 
 // App
 
-// Route::prefix('app')->group(function () {
-
-// });
+Route::prefix('app')->group(function () {
+    Route::prefix('auth')->group(function () {
+        Route::get('signin', [ApiSigninController::class, 'signin']);
+    });
+});
 
 // Fallback
 

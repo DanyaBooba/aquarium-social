@@ -2,7 +2,7 @@
     height: 80vh !important;
     border-top-left-radius: 12px !important;
     border-top-right-radius: 12px !important;
-    background-color: var(--offcanvas-bg) !important;
+    background-color: var(--color-body-plane) !important;
 }
 
 .offcanvas-bottom button.btn-close {
@@ -18,7 +18,7 @@
 }
 
 .user-offcanvas .user-profile-text p:first-child {
-    font-size: 30px;
+    font-size: 1.25rem;
     font-family: ResistSans;
 }
 
@@ -63,12 +63,6 @@
     font-family: ResistSans;
     margin-bottom: -12px;
 }
-
-/* .user-offcanvas .user-profile-data-mobile div button p:first-child {
-    font-size: 2rem;
-    font-family: ResistSans;
-    margin-bottom: -12px;
-} */
 
 .user-offcanvas .user-profile-data-mobile div button p:not(:first-child) {
     font-size: .7rem;

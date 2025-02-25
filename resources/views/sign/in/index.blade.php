@@ -3,7 +3,7 @@
 @section('page.title', __('Вход'))
 
 @section('auth.header')
-    <x-sign.header>
+    <x-sign.header :routeLogin="true">
         {{ __('Вход') }}
     </x-sign.header>
 @endsection
@@ -25,7 +25,7 @@
     </div>
     <x-sign.choose-or />
     <div id="signin-choose-email">
-        <a href="{{ route('auth.signin.email') }}">
+        <a href="{{ route('auth.code') }}">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect width="20" height="16" x="2" y="4" rx="2" />
@@ -38,17 +38,11 @@
         <a href="{{ route('auth.sign.test') }}">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="me-2" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                <path d="M6 8h2" />
-                <path d="M6 12h2" />
-                <path d="M16 8h2" />
-                <path d="M16 12h2" />
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                <path d="M8 11h8" />
+                <path d="M8 7h6" />
             </svg>
             {{ __('Тестовый аккаунт') }}
         </a>
     </div>
-    <a href="{{ route('auth.signup') }}" class="simple">
-        {{ __('Не зарегистрированы?') }}
-    </a>
 @endsection

@@ -1,3 +1,7 @@
+.container-post {
+    margin-bottom: 10rem;
+}
+
 .container-post .post-image {
     display: flex;
     align-items: center;

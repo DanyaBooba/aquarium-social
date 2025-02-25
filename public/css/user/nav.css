@@ -7,8 +7,8 @@
     left: 0;
     z-index: 1030;
 
-    background-color: var(--user-nav-background);
-    border-top: .1rem solid var(--user-nav-border);
+    background-color: var(--color-body-plane);
+    border-top: .1rem solid var(--color-body-plane-3);
 
     padding-bottom: env(safe-area-inset-bottom);
 }
@@ -49,11 +49,11 @@
 }
 
 .fixed-bottom-nav .container-fluid div a.active {
-    color: var(--user-nav-link-active) !important;
+    color: var(--text-link-hover) !important;
 }
 
 .fixed-bottom-nav .container-fluid div a.active svg {
-    stroke: var(--user-nav-link-active) !important;
+    stroke: var(--text-link-hover) !important;
 }
 
 @media(min-width: 768px) {

@@ -1,5 +1,5 @@
 .user-profile {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .user-profile .user-profile-left {
@@ -69,7 +69,7 @@
     margin-top: 112px;
 
     border-radius: 50%;
-    background: var(--user-profile-image-bg);
+    background: var(--header);
 }
 
 .user-profile .user-profile-image-point span {
@@ -96,14 +96,10 @@
     min-width: 150px;
     width: 150px;
     height: 150px;
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
+    box-shadow: 0 0 .25rem var(--shadow) !important;
 
     border-radius: 50%;
 }
-
-/* .user-profile .user-profile-image:has(:not(.user-profile-image-service)) {
-    border: .1rem solid var(--user-profile-image-border);
-} */
 
 .user-profile .user-profile-image img {
     max-width: 100%;
@@ -111,7 +107,7 @@
     height: auto;
 
     border-radius: 50%;
-    background: var(--user-profile-image-bg-image);
+    background: var(--color-body-plane);
 }
 
 .user-profile .user-profile-image img:not(.user-profile-image-service) {
@@ -144,10 +140,10 @@
 
     flex-wrap: wrap;
 
-    background: var(--user-profile-image-bg);
+    background: var(--header);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
+    box-shadow: 0 0 .25rem var(--shadow) !important;
 
     padding: 1rem 2rem;
     margin-top: -14px;
@@ -177,50 +173,50 @@
 
     margin-top: .5rem;
     padding: .2rem;
-    margin-bottom: .5rem;
+    margin-bottom: .3rem;
+    gap: .7rem;
 }
 
 .user-profile .user-profile-buttons button.user-button-mobile {
-    display: none;
+    display: none !important;
+}
+
+.user-profile .user-profile-buttons button.user-button-pc {
+    display: flex;
 }
 
 .user-profile .user-profile-buttons button {
     display: flex;
     align-items: center;
     min-width: fit-content;
+    flex-direction: row-reverse;
 
-    color: var(--user-profile-button-text);
-    background-color: var(--user-profile-button);
+    color: var(--color-body-plane-text);
+    background-color: var(--color-body-plane);
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
 
     padding: .7rem 1.4rem;
-    margin-right: .7rem;
+    /* margin-right: .7rem; */
     /* margin-left: .5rem; */
 
     transition: .15s;
 }
 
-/* .user-profile .user-profile-buttons button:focus {
-    outline: none !important;
-} */
-
 .user-profile .user-profile-buttons button:disabled {
-    background-color: var(--user-profile-button-disabled);
-    /* outline: .2rem var(--user-profile-button) dashed; */
-    margin-right: .75rem;
+    background-color: var(--header);
 }
 
-.user-profile .user-profile-buttons button.button__accent {
-    background-color: var(--user-profile-button-accent);
-    color: var(--user-profile-button-accent-text) !important;
-}
+/* .user-profile .user-profile-buttons button.button__accent {
+    background-color: var(--color-body-plane-accent);
+    color: var(--color-body-plane-accent-text) !important;
+} */
 
 .user-profile .user-profile-buttons button svg {
     width: 20px;
     height: 20px;
 
-    margin-right: .5rem;
+    margin-left: .75rem;
 }
 
 .user-profile .user-profile-text p.user-profile-name::-webkit-scrollbar {
@@ -233,7 +229,6 @@
 
     overflow: scroll;
     white-space: nowrap;
-    /* text-overflow: ellipsis; */
 }
 
 .user-profile .user-profile-text p.user-profile-desc::-webkit-scrollbar {
@@ -246,7 +241,6 @@
 
     overflow: scroll;
     white-space: nowrap;
-    /* text-overflow: ellipsis; */
 }
 
 .container {
@@ -254,7 +248,74 @@
     padding-right: .6rem !important;
 }
 
+.user-profile .user-profile-buttons button:not(:disabled) {
+    box-shadow: 0 0 .25rem var(--shadow) !important;
+}
+
+.user-profile .user-profile-buttons .dropdown .dropdown-menu {
+    border-radius: 12px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    border: none !important;
+    background: var(--header);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.user-profile .user-profile-buttons .dropdown .dropdown-menu li {
+    padding-left: 0;
+}
+
+.user-profile .user-profile-buttons .dropdown .dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    gap: .5rem;
+}
+
+.user-profile .user-profile-buttons .dropdown .dropdown-menu li a svg {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
+.user-profile .user-profile-buttons .dropdown .dropdown-menu .user-dropdown-settings {
+    display: none !important;
+}
+
+.user-profile .user-profile-buttons .dropdown .dropdown-menu .user-dropdown-share {
+    display: none !important;
+}
+
+.user-profile .user-profile-buttons .dropdown .dropdown-menu .user-dropdown-sub {
+    display: none !important;
+}
+
 /* media */
+
+@media(max-width: 364px) {
+    .user-profile .user-profile-buttons button.user-button-settings {
+        display: none !important;
+    }
+
+    .user-profile .user-profile-buttons .dropdown .dropdown-menu .user-dropdown-settings {
+        display: block !important;
+    }
+
+    .user-profile .user-profile-buttons .dropdown .dropdown-menu .user-dropdown-sub {
+        display: block !important;
+    }
+}
+
+@media(max-width: 495px) {
+    .user-profile .user-profile-buttons button.user-button-share {
+        display: none !important;
+    }
+
+    .user-profile .user-profile-buttons .dropdown .dropdown-menu .user-dropdown-share {
+        display: block !important;
+    }
+}
 
 @media(max-width: 860px) {
     .user-profile-content {
@@ -280,8 +341,13 @@
         flex-direction: column;
         align-items: center !important;
         text-align: center;
+        gap: .5rem;
         margin-right: 0 !important;
         margin-top: -6rem !important;
+    }
+
+    .user-profile .user-profile-text {
+        padding-bottom: .5rem !important;
     }
 
     .user-profile .user-profile-right {
@@ -302,9 +368,42 @@
     }
 }
 
+@media(max-width: 767.98px) and (min-width: 365px) {
+    .user-profile .user-profile-buttons button.user-button-mobile.user-button-settings {
+        display: flex !important;
+    }
+}
+
 @media(max-width: 767.98px) {
-    .user-profile .user-profile-buttons button.user-button-mobile {
-        display: block;
+    .user-profile .user-profile-buttons button.user-button-mobile:not(.user-button-settings) {
+        display: flex !important;
+    }
+
+    .user-profile .user-profile-buttons button.user-button-pc {
+        display: none !important;
+    }
+
+    .user-profile .user-profile-buttons button.user-button-complain {
+        display: none !important;
+    }
+
+    .user-profile .user-profile-buttons button {
+        flex-direction: column;
+        font-size: .8rem;
+        flex: 1;
+    }
+
+    .user-profile .user-profile-buttons button svg {
+        margin: 0;
+        margin-bottom: .25rem;
+    }
+
+    .user-profile .user-profile-buttons {
+        overflow: visible !important;
+    }
+
+    .user-profile .user-profile-buttons .dropdown {
+        display: contents;
     }
 }
 
@@ -313,10 +412,10 @@
         min-width: 380px !important;
         min-height: 156px !important;
     }
-}
 
-.user-profile .user-profile-buttons button:not(:disabled) {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
+    .user-profile .user-profile-buttons .user-button-mobile {
+        display: none !important;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -333,7 +432,7 @@
 
 @media(hover: hover) {
     .user-profile .user-profile-buttons button:not(:disabled):hover {
-        background-color: var(--user-profile-button-hover);
+        background-color: var(--color-body-plane-2);
     }
 
     .user-profile .user-profile-right div button:hover {
@@ -343,11 +442,11 @@
 
 @media(hover: none) {
     .user-profile .user-profile-buttons button:not(:disabled):active {
-        background-color: var(--user-profile-button-hover);
+        background-color: var(--color-body-plane-2);
     }
 
     .user-profile .user-profile-buttons button.button__accent:active {
-        background-color: var(--user-profile-button-accent-hover) !important;
+        background-color: var(--color-body-plane-accent-hover) !important;
     }
 
     .user-profile .user-profile-right div button:active {

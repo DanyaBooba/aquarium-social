@@ -4,16 +4,10 @@
 
 .row-user-bar {
     padding: 0;
-    background-color: var(--body-bg) !important;
+    background-color: var(--body) !important;
 }
 
 .row-user-bar-container {
-    /* overflow-y: scroll;
-    position: sticky;
-    top: 0 !important;
-    left: 0 !important;
-    bottom: 0 !important; */
-
     position: sticky;
     top: 0;
     padding: 3rem 2rem;
@@ -21,12 +15,12 @@
 
 .row-user-bar svg.logo {
     margin-bottom: 3rem;
-    fill: var(--svg-color);
+    fill: var(--text);
 }
 
 .row-user-bar ul {
     list-style-type: none;
-    padding-left: .25rem;
+    padding-left: 0;
 }
 
 .row-user-bar ul li {
@@ -36,8 +30,8 @@
 .row-user-bar ul li a {
     display: flex;
     align-items: center;
-
     text-decoration: none;
+    font-size: 18px;
     transition: .15s;
 }
 
@@ -47,8 +41,6 @@
 
 .row-user-bar ul li a svg {
     margin-right: 1rem;
-    margin-bottom: .25rem;
-
     min-width: 24px;
     min-height: 24px;
 }
@@ -94,7 +86,12 @@
 .row-user-content {
     max-width: 880px !important;
     padding: 0 !important;
-    background-color: var(--body-bg) !important;
+    background-color: var(--body) !important;
+}
+
+h1.title-has-back {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 /* media */
@@ -112,8 +109,12 @@
 }
 
 @media(min-width: 768px) {
-    .row-user-content h1 {
+    .row-user-content h1:not(.title-has-back) {
         margin-top: 1.5rem;
+    }
+
+    div.div-has-back:has(h1.title-has-back) {
+        margin-top: 1.5rem !important;
     }
 }
 

@@ -1,11 +1,11 @@
 function buttonOpenURL(url) {
-    window.open(url, "_self");
+    window.open(url, '_self')
 }
 
 function buttonCopyURL(url) {
-    navigator.clipboard.writeText(url);
+    navigator.clipboard.writeText(url)
 }
 
 function buttonCopyCurrentURL() {
-    buttonCopyURL(window.location.href);
+    buttonCopyURL(window.location.href)
 }

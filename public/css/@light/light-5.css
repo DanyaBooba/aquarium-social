@@ -1,0 +1,23 @@
+:root {
+    --color-body-plane: #ffffff;
+    --color-body-plane-2: #d6dae0;
+    --color-body-plane-3: #efefef;
+    --color-body-plane-4: #a5a5a5;
+
+    --body: #fbf5ee;
+    --text: #615039;
+    --text-invert: #ffffff;
+    --text-link-underline: #ead8c1;
+    --shadow: #e3dacf;
+    --shadow-hover: #ccbfae;
+
+    --header: rgba(255, 255, 255, .84);
+    --header-border: #f8e9d4;
+
+    --page-main-button-shadow: #9c8363;
+    --page-main-accent: #D2B48C;
+    --page-main-list-item-1: #D2B48C;
+    --page-main-list-item-2: #81b0ff;
+    --page-main-list-item-3: #9ff18e;
+    --page-main-darklight-icon: #f1c40f;
+}

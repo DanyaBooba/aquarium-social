@@ -20,16 +20,19 @@
                     <li><a href="{{ route('main.about') }}"
                             class="nav-link {{ header_route_active_link('main.about') }}">{{ __('Информация') }}</a>
                     </li>
+                    <li><a href="{{ route('main.about') }}"
+                            class="nav-link {{ header_route_visible_link('main.about') }}">{{ __('Галерея') }}</a>
+                    </li>
                     <li><a href="{{ route('main.faq') }}"
                             class="nav-link {{ header_route_active_link('main.faq') }}">{{ __('FAQ') }}</a></li>
                     <li><a href="{{ route('main.history') }}"
-                            class="nav-link {{ header_route_active_link('main.history') }}">{{ __('История') }}</a>
+                            class="nav-link {{ header_route_visible_link('main.history') }}">{{ __('История') }}</a>
                     </li>
-                    <li><a href="{{ route('blog.index') }}"
+                    <li><a href="https://t.me/s/aquariumsocial"
                             class="nav-link {{ header_route_active_link('blog.index') }}">{{ __('Новости') }}</a>
                     </li>
                     <li><a href="{{ route('main.smi') }}"
-                            class="nav-link {{ header_route_active_link('main.smi') }}">{{ __('СМИ') }}</a>
+                            class="nav-link {{ header_route_visible_link('main.smi') }}">{{ __('СМИ') }}</a>
                     </li>
                     <li><a href="{{ route('main.api') }}"
                             class="nav-link {{ header_route_visible_link('main.api') }}">{{ __('API') }}</a></li>
@@ -64,8 +67,7 @@
                             </a>
                         </li>
                     @endif
-                    <li><a href="{{ route('main.download') }}" class="nav-link link-download">{{ __('Скачать') }}</a>
-                    </li>
+                    {{-- <li><a href="{{ route('main.download') }}" class="nav-link link-download">{{ __('Скачать') }}</a></li> --}}
                 </ul>
             </div>
         </div>

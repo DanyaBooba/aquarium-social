@@ -38,8 +38,8 @@ Route::prefix('user/settings')->middleware(['login.session', 'user.blocked', 'us
     Route::get('session', [SessionController::class, 'index'])->name('settings.session');
     Route::post('session', [SessionController::class, 'store'])->name('settings.session.store');
 
-    Route::get('services', [SessionController::class, 'index'])->name('settings.services');
-    Route::post('services', [SessionController::class, 'store'])->name('settings.services.store');
+    // Route::get('services', [SessionController::class, 'index'])->name('settings.services');
+    // Route::post('services', [SessionController::class, 'store'])->name('settings.services.store');
 
     Route::get('themes', [SettingsController::class, 'themes'])->name('settings.themes');
     Route::get('language', [SettingsController::class, 'language'])->name('settings.language');

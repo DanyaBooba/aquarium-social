@@ -4,15 +4,17 @@
 
 @section('addpost.content')
     <div class="container-settings-main">
-        <div class="editpost-header">
+        <div class="div-has-back">
             <a href="{{ route('post.show', [$userId, $post->idPost]) }}">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-chevron-left">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left">
                     <path d="m15 18-6-6 6-6" />
                 </svg>
             </a>
-            <h1>{{ __('Изменить пост') }} <span class="text-muted">{{ $post->idPost }}</span></h1>
+            <h1 class="title-has-back">
+                {{ __('Изменить пост') }}
+                <span class="text-muted">{{ $post->idPost }}</span>
+            </h1>
         </div>
 
         <x-form.error-first />

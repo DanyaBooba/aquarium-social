@@ -8,7 +8,7 @@ main.row-user-content .container h2 {
 
 main.row-user-content header {
     margin-top: .75rem;
-    margin-bottom: .75rem;
+    /* margin-bottom: .75rem; */
     display: flex;
     align-items: center;
 }
@@ -21,15 +21,18 @@ main.row-user-content header .header__logo {
 }
 
 main.row-user-content header .header__logo svg {
-    fill: var(--text-color) !important;
+    fill: var(--text) !important;
 }
 
 main.row-user-content header .header__meta {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
     margin-left: auto;
 }
 
 main.row-user-content header .header__meta a.active svg {
-    stroke: var(--user-nav-link-active) !important;
+    stroke: var(--text-link-hover) !important;
 }
 
 @media(min-width: 767.98px) {

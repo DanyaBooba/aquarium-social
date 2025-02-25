@@ -24,3 +24,4 @@ yarn-error.log
 /resources/views/admin
 /resources/views/layouts/admin
 /routes/admin/admin.php
+/public/loads

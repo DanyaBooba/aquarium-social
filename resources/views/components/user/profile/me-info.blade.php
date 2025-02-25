@@ -1,12 +1,12 @@
 <div class="profile-info">
-    @unless ($profile->verified)
+    @if (!$profile->verified)
         <x-user.profile.info-block.verified />
+    @elseif($profile->usertype == -1)
+        <x-user.profile.info-block.test-account />
     @else
-        @if ($profile->usertype == -1)
-            <x-user.profile.info-block.test-account />
-        @else
+        {{-- @if ($profile->usertype != -1)
             <x-user.profile.info-block.share-link :link="$profile->share" />
-        @endif
+        @endif --}}
 
         @if ($profile->sub == 0)
             <x-user.profile.info-block.lets-subs />

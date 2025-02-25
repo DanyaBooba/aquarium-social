@@ -1,6 +1,6 @@
 .second-account {
     display: flex;
-    background-color: var(--settings-main-background);
+    background-color: var(--color-body-plane);
     align-items: center;
     padding: 1rem 1.5rem;
     margin-bottom: 1rem;

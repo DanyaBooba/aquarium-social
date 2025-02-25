@@ -4,18 +4,24 @@ form input[type="text"],
 form input[type="number"],
 form input[type="search"],
 form textarea {
-    background: var(--form-input-background);
-    color: var(--text-color) !important;
-    border: .1rem solid var(--form-input-border) !important;
+    background: var(--color-body-plane);
+    color: var(--text) !important;
+    border: .1rem solid var(--header-border) !important;
+}
+
+input.input-style {
+    background: var(--color-body-plane) !important;
+    color: var(--text) !important;
+    border: .1rem solid var(--header-border) !important;
 }
 
 form input.form-check-input {
-    border: .1rem solid var(--form-input-border);
+    border: .1rem solid var(--header-border);
 }
 
 form textarea {
-    background: var(--body-bg);
-    border: .1rem solid var(--form-input-border);
+    background: var(--body);
+    border: .1rem solid var(--header-border);
 }
 
 form .input-password .form-floating {
@@ -24,11 +30,13 @@ form .input-password .form-floating {
 
 form .input-password a.input-group-text {
     position: absolute;
+    display: block !important;
+    z-index: 1000;
 
     border: none !important;
     background: transparent !important;
 
-    margin-left: 80% !important;
+    margin-left: 82% !important;
     margin-top: 10px;
 }
 

@@ -18,7 +18,7 @@ header.header {
 
 header.header .container {
     border: .1rem solid var(--header-border);
-    background-color: var(--header-bg);
+    background-color: var(--header);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     border-radius: 40px;
@@ -42,12 +42,12 @@ header.header .header-content-logo {
 }
 
 header.header .header-content-logo svg {
-    width: 200px;
-    fill: var(--svg-color);
+    width: 180px;
+    fill: var(--text);
 }
 
 header.header .header-content-links a.link-download:is(:focus, :focus-within, :focus-visible) {
-    color: var(--text-color) !important;
+    color: var(--text) !important;
 }
 
 header.header .header-content-links a.link-download {
@@ -108,19 +108,23 @@ header.header .header-content-profile img {
 }
 
 header.header .header-content-profile p {
-    color: var(--text-color);
+    color: var(--text);
     margin-bottom: 0;
     margin-left: .5rem;
+}
+
+header.header .header-content-links li:has(.display-none) {
+    display: none !important;
 }
 
 header.header .header-content-links li a {
     padding-left: .5rem;
     padding-right: .5rem;
-    color: var(--text-color);
+    color: var(--text);
 }
 
 header.header .header-content button.navbar-toggler svg {
-    stroke: var(--svg-color);
+    stroke: var(--text);
 }
 
 header.header .header-content button.navbar-toggler {
@@ -177,6 +181,8 @@ header.header .header-content button.navbar-toggler {
 
     header.header .header-content-links li {
         text-align: end;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
     }
 
     header.header .header-content-links a.link-download {
@@ -193,7 +199,7 @@ header.header .header-content button.navbar-toggler {
 
     header.header .header-content-links li a.active {
         text-decoration: none !important;
-        background-color: var(--header-link-active);
+        background-color: var(--header-border);
         border-radius: 8px;
     }
 
@@ -252,7 +258,7 @@ header.header .header-content button.navbar-toggler {
     }
 
     header.header .header-content-links a.link-download:hover {
-        color: var(--text-color) !important;
+        color: var(--text) !important;
         background-color: var(--header-link-download-border);
     }
 }
@@ -273,7 +279,7 @@ header.header .header-content button.navbar-toggler {
     }
 
     header.header .header-content-links a.link-download:active {
-        color: var(--text-color) !important;
+        color: var(--text) !important;
         background-color: var(--header-link-download-border);
     }
 }

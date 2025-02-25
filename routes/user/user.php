@@ -22,7 +22,7 @@ Route::middleware(['login.session', 'user.blocked'])->group(function () {
         Route::get('complain/{id}', [ComplainController::class, 'index'])->name('user.complain');
 
         Route::get('importpost', [ImportPostController::class, 'index'])->name('user.importpost');
-        Route::post('importpost', [ImportPostController::class, 'post'])->name('user.importpost');
+        // Route::post('importpost', [ImportPostController::class, 'post'])->name('user.importpost');
 
         Route::get('second/change', [SecondAccountController::class, 'change'])->name('user.second.change');
         Route::get('second/remove', [SecondAccountController::class, 'remove'])->name('user.second.remove');

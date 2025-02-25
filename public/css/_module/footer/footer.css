@@ -1,6 +1,6 @@
 footer.footer {
-    border-top: .1rem solid var(--footer-border);
-    background: var(--footer-background);
+    border-top: .1rem solid var(--header-border);
+    background: var(--header);
 
     margin-top: 2rem;
     padding-top: 2rem;
@@ -13,6 +13,9 @@ footer.footer .container {
 }
 
 footer.footer .container div.footer__main {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
     font-size: .875rem;
     margin-right: auto;
 }
@@ -27,11 +30,14 @@ footer.footer .container div.footer__main a {
 
 footer.footer .container div.footer__social {
     display: flex;
+    gap: 1rem;
     align-items: center;
 }
 
-footer.footer .container div.footer__social div.footer__privacy {
-    margin-right: 1rem;
+footer.footer .container div.footer__social div.footer__language {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
 }
 
 footer.footer .container div.footer__social a {

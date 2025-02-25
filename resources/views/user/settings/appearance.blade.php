@@ -115,7 +115,7 @@
 
 @push('js')
     <script src="{{ asset('js/settings/load-image.js') }}"></script>
-    <script src="{{ asset('js/jquery.croppie.js') }}"></script>
-    <script src="{{ asset('js/croppie.js') }}"></script>
+    <script src="{{ asset('js/module/jquery.js') }}"></script>
+    <script src="{{ asset('js/module/croppie.js') }}"></script>
     <script src="{{ asset('js/settings/croppie-logic.js') }}"></script>
 @endpush

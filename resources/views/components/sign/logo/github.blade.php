@@ -1,7 +1,7 @@
 <svg width="98" height="98" viewBox="0 0 98 98" xmlns="http://www.w3.org/2000/svg">
     <style type="text/css">
         .st1-30 {
-            fill: var(--svg-color-github);
+            fill: var(--text-github);
         }
     </style>
     <path class="st1-30" fill-rule="evenodd" clip-rule="evenodd"

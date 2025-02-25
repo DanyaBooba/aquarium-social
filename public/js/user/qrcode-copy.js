@@ -22,8 +22,7 @@ function buttonQrcode(link, id) {
 }
 
 function textQrcode(button, status) {
-    const lang = document.querySelector("html").lang
-    switch (lang) {
+    switch (document.querySelector('html').lang) {
         case 'ru':
             button.textContent = status ? listRu.copied : listRu.copy
             break

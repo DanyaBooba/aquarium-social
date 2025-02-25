@@ -4,25 +4,21 @@
 
 @section('addpost.content')
     <div class="container-settings-main">
-        <h1 class="mb-4">{{ __('Добавить запись') }}</h1>
+        {{-- <h1 class="mb-4">{{ __('Добавить запись') }}</h1> --}}
 
         <x-form.error-first />
 
         <div class="addpost-container addpost-container-addpost">
-            @if ($whiteList)
-                <x-addpost.post-import />
-            @else
-                <x-addpost.post-moderate />
-            @endif
-            <form action="{{ route('post.add.store') }}" method="post">
+            <form action="{{ route('post.add.store') }}" method="post" class="mb-4">
                 @csrf
                 <input id="x" type="hidden" name="message">
                 <trix-editor input="x" placeholder="{{ addpost_placeholder() }}"></trix-editor>
-                <div>
-                    <button type="submit" class="btn btn-success">
-                        {{ __('Опубликовать') }}
-                    </button>
-                </div>
+                {{-- @if (!$whiteList)
+                    <x-addpost.post-moderate />
+                @endif --}}
+                <button type="submit" class="btn btn-success w-100 mt-3 py-3" style="border-radius: 12px;">
+                    {{ __('Опубликовать') }}
+                </button>
             </form>
         </div>
     </div>

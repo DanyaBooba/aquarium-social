@@ -1,0 +1,33 @@
+.feed-title {
+    display: flex;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.feed-title button {
+    font-size: 2.5rem !important;
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none !important;
+    margin: 0;
+    transition: .3s;
+}
+
+.feed-title button:not(.active) {
+    transform: scale(.85);
+    color: var(--text-muted) !important;
+}
+
+.feed-title button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media(min-width: 768px) {
+    .feed-title {
+        margin-top: 1.5rem;
+    }
+}

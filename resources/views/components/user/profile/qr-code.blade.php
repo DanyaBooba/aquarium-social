@@ -6,6 +6,10 @@
                     <h4>
                         {{ $nickname }}
                     </h4>
+                @else
+                    <h4>
+                        {{ __('Поделиться') }}
+                    </h4>
                 @endif
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -24,7 +28,7 @@
 </div>
 
 <script src="{{ asset('js/user/qrcode-copy.js') }}"></script>
-<script src="{{ asset('js/user/qrcode.min.js') }}"></script>
+<script src="{{ asset('js/module/qrcode.js') }}"></script>
 <script>
     const qrcodeBlock = document.getElementById("qr-code-generator");
     const data = "{{ $nickname ? route('user.show.nickname', $nickname) : route('user.show.id', $id) }}";
@@ -44,7 +48,7 @@
             type: "extra-rounded"
         },
         backgroundOptions: {
-            color: "var(--modal-background)",
+            color: "var(--color-body-plane)",
         },
         imageOptions: {
             crossOrigin: "anonymous",

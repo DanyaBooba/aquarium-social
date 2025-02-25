@@ -9,7 +9,7 @@
 }
 
 .container-simple svg.logo {
-    fill: var(--svg-color);
+    fill: var(--text);
 }
 
 .container-simple .row .col {
@@ -17,7 +17,7 @@
 }
 
 .container-simple-numbers-text {
-    margin-top: 2rem;
+    margin-top: .5rem;
 }
 
 .container-simple-numbers {

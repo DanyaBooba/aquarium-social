@@ -27,7 +27,11 @@
         <x-user.profile.posts :posts="$posts" />
     @endif
 @else
+    <div>
+        <img src="/img/illustrations/mail.png" alt="Записей не найдено"
+            style="display: flex; max-width: 150px; margin-left: auto; margin-right: auto; margin-top: 3rem">
+    </div>
     <h4 class="text-center fs-3" style="margin-top: 2rem; margin-bottom: 5rem">
-        Записей не найдено.
+        {{ __('Записей не найдено') }}.
     </h4>
 @endif

@@ -3,6 +3,7 @@
     overflow: scroll;
     margin-bottom: 1rem;
     padding: .2rem;
+    gap: .7rem;
 }
 
 .profile-info::-webkit-scrollbar {
@@ -11,13 +12,13 @@
 }
 
 .profile-info__item {
-    /* border: .1rem solid var(--settings-main-border); */
+    /* border: .1rem solid var(--color-body-plane-3); */
     /* padding: .25rem; */
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
+    box-shadow: 0 0 .25rem var(--shadow) !important;
     border-radius: 16px;
     min-width: 330px;
     max-width: 330px;
-    margin-right: .5rem;
+    /* margin-right: .5rem; */
     /* margin-left: .5rem; */
     /* margin-bottom: 1rem; */
 }
@@ -25,7 +26,7 @@
 .profile-info__container {
     display: flex;
     flex-direction: column;
-    background: var(--settings-main-background);
+    background: var(--color-body-plane);
     padding: 1.2rem 1rem;
     border-radius: 12px;
     height: 100%;

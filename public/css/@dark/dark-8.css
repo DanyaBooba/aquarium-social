@@ -1,0 +1,23 @@
+:root {
+    --color-body-plane: #2a2a2b;
+    --color-body-plane-2: #414143;
+    --color-body-plane-3: #444446;
+    --color-body-plane-4: #bbbbbb;
+
+    --body: #1E1E1E;
+    --text: #e5e5e5;
+    --text-invert: #000000;
+    --text-link-underline: #828282;
+    /* --shadow: rgba(0, 0, 0, .075); */
+    /* --shadow-hover: rgba(0, 0, 0, .15); */
+
+    --header: rgb(47, 47, 47, .8);
+    --header-border: #333334;
+
+    --page-main-button-shadow: #9b812e;
+    --page-main-accent: #D4AF37;
+    --page-main-list-item-1: #4c6fa9;
+    --page-main-list-item-2: #58974c;
+    --page-main-list-item-3: #594d94;
+    --page-main-darklight-icon: #D4AF37;
+}

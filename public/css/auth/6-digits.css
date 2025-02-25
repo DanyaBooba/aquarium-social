@@ -9,7 +9,8 @@ input.digits6 {
     flex: 1 !important;
     width: 100%;
     margin-bottom: 0;
-    border: .1rem solid var(--form-input-border);
+    border: .1rem solid var(--header-border);
+    background-color: var(--header);
     height: 50px;
     text-align: center;
 }

@@ -1,5 +1,10 @@
+.user-modal {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
 .user-modal .modal-content {
-    background-color: var(--modal-background);
+    background-color: var(--color-body-plane);
     border-radius: 12px;
 }
 
@@ -39,7 +44,7 @@
     width: 100% !important;
     padding-bottom: .9rem;
     margin-top: 1rem;
-    border-bottom: 1px solid var(--settings-main-border);
+    border-bottom: 1px solid var(--color-body-plane-3);
 }
 
 .user-modal .modal-content .modal-body ul.user-modal-list-people li a span {
@@ -73,7 +78,7 @@
     border-radius: 50%;
     max-width: 180px;
     max-height: 180px;
-    box-shadow: 0 .5rem 1rem var(--achiv-shadow) !important;
+    box-shadow: 0 .5rem 1rem var(--shadow-hover) !important;
 }
 
 .user-modal .modal-content .modal-body .user-modal-list-achivs .user-modal-list-achivs__item section {

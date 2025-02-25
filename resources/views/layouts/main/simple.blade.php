@@ -5,19 +5,20 @@
 @endpush
 
 @section('body')
-<body>
-    <div class="d-flex flex-column justify-content-between min-vh-100">
-        <main class="flex-grow-1 py-1">
-            <section>
-                <div class="container container-simple mt-2">
-                    @yield('simple.content')
-                </div>
-            </section>
-        </main>
 
-        @include('includes.footer')
-    </div>
+    <body>
+        <div class="d-flex flex-column justify-content-between min-vh-100">
+            <main class="flex-grow-1 py-1">
+                <section>
+                    <div class="container container-simple mt-2">
+                        @yield('simple.content')
+                    </div>
+                </section>
+            </main>
 
-    <script src="{{ asset('js/bootstrap.js') }}"></script>
-</body>
+            @include('includes.footer')
+        </div>
+
+        <script src="{{ asset('js/module/bootstrap.js') }}"></script>
+    </body>
 @endsection

@@ -1,5 +1,41 @@
 :root {
+    --accent: #8D77FE;
+    --accent-2: #464cb4;
+
+    --code-screen-str: #080;
+    --code-screen-kwd: #008;
+    --code-screen-com: #800;
+    --code-screen-typ: #606;
+    --code-screen-lit: #066;
+    --code-screen-pun: #660;
+    --code-screen-tag: #008;
+    --code-screen-atn: #606;
+    --code-screen-atv: #080;
+    --code-screen-dec: #606;
+    --code-screen-fun: #f00;
+
+    --code-screen-projection-str: #060;
+    --code-screen-projection-kwd: #006;
+    --code-screen-projection-com: #600;
+    --code-screen-projection-typ: #404;
+    --code-screen-projection-lit: #044;
+    --code-screen-projection-pun: #440;
+    --code-screen-projection-tag: #006;
+    --code-screen-projection-atn: #404;
+    --code-screen-projection-atv: #060;
+
+    --code-L: #eee;
+
+    --text-success: #198754;
+    --text-link-hover: #0984e3;
+    --mark-bg: #faf2cd;
+
+    --user-alert-text-warning: #ca8726;
+    --user-alert-success-bg: #2ecc71;
+
     --collapse-filter: ;
 
     --form-select-cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+
+    --text-github: #24292f;
 }

@@ -1,12 +1,13 @@
 .profile-addpost {
-    background-color: var(--user-profile-addpost-bg);
+    background-color: var(--color-body-plane);
     border-radius: 12px;
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
+    box-shadow: 0 0 .25rem var(--shadow) !important;
     transition: .3s;
 }
 
 .profile-addpost a {
     display: flex;
+    align-items: center;
     text-decoration: none;
     padding: 1.5rem 2rem;
 }
@@ -15,22 +16,29 @@
     margin-left: auto;
 }
 
+.profile-addpost a img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
 @media(hover: hover) {
     .profile-addpost a:hover {
-        color: var(--text-color) !important;
+        color: var(--text) !important;
     }
 
     .profile-addpost:hover {
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        box-shadow: 0 .5rem 1rem var(--shadow-hover) !important;
     }
 }
 
 @media(hover: none) {
     .profile-addpost a:active {
-        color: var(--text-color) !important;
+        color: var(--text) !important;
     }
 
     .profile-addpost:active {
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        box-shadow: 0 .5rem 1rem var(--shadow-hover) !important;
     }
 }

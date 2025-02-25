@@ -7,10 +7,10 @@
 .button-top a svg {
     width: 45px;
     height: 45px;
-    stroke: var(--text-color);
+    stroke: var(--text);
 
-    background-color: var(--button-top-background);
-    border: .1rem solid var(--button-top-border);
+    background-color: var(--color-body-plane);
+    border: .1rem solid var(--header-border);
     border-radius: 50%;
     padding: .25rem;
     padding-bottom: .4rem;
@@ -40,13 +40,13 @@
 @media(hover: hover) {
     .button-top a:hover svg {
         stroke: var(--text-link-hover);
-        background-color: var(--button-top-border);
+        background-color: var(--header-border);
     }
 }
 
 @media(hover: none) {
     .button-top a:active svg {
         stroke: var(--text-link-hover);
-        background-color: var(--button-top-border);
+        background-color: var(--header-border);
     }
 }

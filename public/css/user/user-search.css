@@ -4,19 +4,20 @@
 }
 
 .user-search .user-search-input input[type="search"] {
-    background-color: var(--form-input-background);
-    color: var(--text-color) !important;
-    border: .1rem solid var(--form-input-border) !important;
+    background-color: var(--color-body-plane);
+    color: var(--text) !important;
+    box-shadow: 0 0 .25rem var(--shadow) !important;
+    border: none !important;
 
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 1rem 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem !important;
 }
 
 .user-search .user-search-select select {
-    background-color: var(--body-bg);
-    color: var(--text-color) !important;
-    border: .1rem solid var(--form-input-border) !important;
+    background-color: var(--body);
+    color: var(--text) !important;
+    border: .1rem solid var(--header-border) !important;
 
     background-image: var(--form-select-cursor) !important;
 
@@ -30,9 +31,14 @@
 }
 
 .search-users div.search-users__profile {
-    display: flex;
     padding: .5rem;
     margin: 0;
+}
+
+.search-users div.search-users__profile .search-users-content-data {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-users div.search-users__profile p {
@@ -54,6 +60,8 @@
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .search-users div.search-users__profile .search-users-content-info .search-users-content-info__block {
@@ -78,40 +86,33 @@
     flex-direction: column;
     align-items: center;
     padding-top: 2rem !important;
-
     width: 192px;
     height: 230px;
-
-    /* border: .1rem solid var(--user-search-border); */
-    border-radius: 8px;
-
-    background-color: var(--form-input-background);
+    border-radius: 12px;
+    background-color: var(--color-body-plane);
     text-decoration: none !important;
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
-
+    box-shadow: 0 0 .25rem var(--shadow) !important;
     padding: 1rem;
-
     transition: .15s;
 }
 
 .search-users a.search-users-content:focus .search-users-content-info .search-users-content-info__block {
-    color: var(--text-color) !important;
+    color: var(--text) !important;
 }
 
 .search-users a.search-users-content:is(:focus, :focus-visible, :focus-within) {
-    color: var(--text-color) !important;
-    background-color: var(--user-search-background-hover);
+    color: var(--text) !important;
+    background-color: var(--color-body-plane);
 }
 
 .search-users .search-users-content img {
     width: 80px;
-
     margin-bottom: .5rem;
     border-radius: 100px;
 }
 
 .search-users .search-users-content button svg {
-    stroke: var(--text-color);
+    stroke: var(--text);
 }
 
 .search-users .search-users-content button:not(:focus, :focus-visible, :focus-within, :hover, :active) {
@@ -125,18 +126,18 @@
     width: 100%;
 
     border: .1rem solid transparent;
-    color: var(--text-color);
+    color: var(--text);
     transition: .15s;
 }
 
 .search-users .search-users-content button:is(:focus, :focus-visible, :focus-within) {
-    border: .1rem solid var(--user-search-button-background);
-    color: var(--text-color) !important;
+    border: .1rem solid var(--user-search-button-bg);
+    color: var(--text) !important;
     background-color: transparent;
 }
 
 .user-search-filters button {
-    color: var(--text-color);
+    color: var(--text);
 }
 
 /* media */
@@ -144,8 +145,8 @@
 @media(max-width: 767.98px) {
     .search-users div.search-users__profile {
         justify-content: center;
-        width: 50%;
-        min-width: 200px;
+        width: 100%;
+        min-width: 100% !important;
     }
 
     .search-users {
@@ -156,21 +157,25 @@
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
+    .search-users .search-users-content img {
+        margin-bottom: 0 !important;
+    }
 }
 
 @media(hover: hover) {
     .search-users a.search-users-content:hover {
-        color: var(--text-color) !important;
-        background-color: var(--user-search-background-hover);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        color: var(--text) !important;
+        background-color: var(--color-body-plane);
+        box-shadow: 0 .5rem 1rem var(--shadow-hover) !important;
     }
 
     .search-users a.search-users-content:hover .search-users-content-info .search-users-content-info__block {
-        color: var(--text-color) !important;
+        color: var(--text) !important;
     }
 
     .search-users .search-users-content button:hover {
-        border: .1rem solid var(--user-search-button-background);
+        border: .1rem solid var(--user-search-button-bg);
         background-color: transparent;
     }
 
@@ -181,17 +186,17 @@
 
 @media(hover: none) {
     .search-users a.search-users-content:active {
-        color: var(--text-color) !important;
-        background-color: var(--user-search-background-hover);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        color: var(--text) !important;
+        background-color: var(--color-body-plane);
+        box-shadow: 0 .5rem 1rem var(--shadow-hover) !important;
     }
 
     .search-users a.search-users-content:active .search-users-content-info .search-users-content-info__block {
-        color: var(--text-color) !important;
+        color: var(--text) !important;
     }
 
     .search-users .search-users-content button:active {
-        border: .1rem solid var(--user-search-button-background);
+        border: .1rem solid var(--user-search-button-bg);
         background-color: transparent;
     }
 
@@ -220,7 +225,7 @@
         padding-top: 1rem !important;
         flex-direction: row !important;
         gap: 1rem;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
     }
 
     .search-users .search-users__profile a p {

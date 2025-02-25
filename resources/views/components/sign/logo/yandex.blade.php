@@ -6,7 +6,7 @@
         }
 
         .st1-10 {
-            fill: var(--svg-color);
+            fill: var(--text);
         }
     </style>
     <path id="Name" class="st1-10"

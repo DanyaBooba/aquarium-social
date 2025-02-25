@@ -2,12 +2,12 @@
     display: flex;
     align-items: center;
 
-    color: var(--text-color);
+    color: var(--text);
 
     border-radius: 0 !important;
-    background: var(--body-bg) !important;
-    border-color: var(--body-bg);
-    border-bottom-color: var(--user-alert-border) !important;
+    background: var(--body) !important;
+    border-color: var(--body);
+    border-bottom-color: var(--color-body-plane-2) !important;
 
     margin-bottom: 0rem;
     padding-top: 1rem !important;
@@ -39,12 +39,12 @@
     margin-left: auto;
     padding: 0 !important;
     background: transparent !important;
-    background-color: var(--body-bg) !important;
-    border-color: var(--body-bg) !important;
+    background-color: var(--body) !important;
+    border-color: var(--body) !important;
 }
 
 .alert button svg {
-    stroke: var(--svg-color) !important;
+    stroke: var(--text) !important;
 }
 
 .alert.alert-warning {
@@ -54,14 +54,10 @@
 .alert.alert-success {
     background-color: var(--user-alert-success-bg) !important;
     justify-content: center;
-    border-radius: 8px !important;
+    border-radius: 12px !important;
     margin-top: 1rem;
-    /* margin-left: .6rem !important;
-    margin-right: .6rem !important; */
-
-    transition: 1s;
 }
 
-.alert.alert-success.closed {
+/* .alert.alert-success.closed {
     transform: scaleY(0);
-}
+} */

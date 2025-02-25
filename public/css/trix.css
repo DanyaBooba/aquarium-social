@@ -1,8 +1,9 @@
 trix-editor {
-  border: 1px solid #bbb;
-  border-radius: 3px;
+    border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 .25rem var(--shadow) !important;
   margin: 0;
-  padding: 0.4em 0.6em;
+  padding: 0.6em 0.8em !important;
   min-height: 5em;
   outline: none; }
 
@@ -13,7 +14,10 @@ trix-toolbar .trix-button-row {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  overflow-x: auto; }
+  overflow-x: auto;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
 
 trix-toolbar .trix-button-group {
   display: flex;

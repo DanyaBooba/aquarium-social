@@ -1,4 +1,4 @@
 mark {
-    background-color: var(--mark-background) !important;
-    color: var(--text-color) !important;
+    background-color: var(--mark-bg) !important;
+    color: var(--text) !important;
 }

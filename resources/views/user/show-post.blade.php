@@ -3,7 +3,7 @@
 @push('css')
     <link rel="stylesheet" type="text/css" href="{{ asset('css/posts/include.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/fancybox.css') }}" />
-    <script src="{{ asset('js/fancybox.js') }}"></script>
+    <script src="{{ asset('js/module/fancybox.js') }}"></script>
 @endpush
 
 @section('page.title', __('Пост'))
@@ -45,35 +45,13 @@
                 {!! $post->message !!}
             </div>
 
-            <div class="modal fade" id="modalLink" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header mb-0 pb-0">
-                            <h1 class="modal-title fs-5 mt-0" id="exampleModalLabel">{{ __('Перейти по ссылке?') }}</h1>
-                        </div>
-                        <div class="modal-body">
-                            <div>
-                                {{ __('Вы пытаетесь открыть ссылку:') }}
-                            </div>
-                            <div id="modalLink_data">
-
-                            </div>
-                            <div class="mt-3 d-flex" style="gap: .5rem">
-                                <button type="button" id="modalLinkButtonOpen" class="btn btn-primary"
-                                    style="flex: 1">{{ __('Открыть ссылку') }}</button>
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">{{ __('Отмена') }}</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <x-post.modal-link />
         </div>
         <x-post.show.bottom :like="false" :idPost="$post->idPost" :idUser="$user->id" />
-        <x-post.show.comments :comments="$comments" />
+        {{-- <x-post.show.comments :comments="$comments" /> --}}
     </div>
 @endsection
 
 @push('js')
-    <script src={{ asset('js/user/post/show.js') }}></script>
+    <script src={{ asset('js/user/post/change-links.js') }}></script>
 @endpush

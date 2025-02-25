@@ -9,7 +9,7 @@
 @endsection
 
 @section('auth.signin')
-    <p>
+    <p class="text-center">
         {{ __('На указанную почту была выслана ссылка для восстановления пароля.') }}
     </p>
 @endsection

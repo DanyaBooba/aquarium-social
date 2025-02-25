@@ -1,8 +1,16 @@
 .toast {
-    border: .1rem solid var(--toast-border) !important;
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;
+    border: none !important;
+    box-shadow: 0 0 .25rem var(--shadow) !important;
     border-radius: 8px !important;
-    background-color: var(--toast-bg) !important;
+    background-color: var(--color-body-plane) !important;
+}
+
+.toast-container:not(:has(.toast.show)) {
+    pointer-events: none !important;
+}
+
+.toast:not(.show) {
+    pointer-events: none !important;
 }
 
 .toast-body {

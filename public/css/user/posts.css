@@ -118,8 +118,8 @@
 
 .posts .row .col-text a {
     height: 100%;
-    background-color: var(--post-bg) !important;
-    border-color: var(--post-border) !important;
+    background-color: var(--color-body-plane) !important;
+    border-color: var(--color-body-plane-2) !important;
     box-shadow: 0 0 .25rem rgba(0, 0, 0, .075);
     border-radius: 12px;
     padding: 1rem;

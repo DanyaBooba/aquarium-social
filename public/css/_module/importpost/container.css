@@ -1,0 +1,69 @@
+.import-post .import-post__choose {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    background-color: var(--importpost-choose-bg);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.import-post .import-post__choose button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.import-post .import-post__choose button.active {
+    transform: scale(1);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+    transition: .3s;
+}
+
+.import-post .import-post__choose button:not(.active) {
+    transform: scale(.9);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: .3;
+    transition: .3s;
+}
+
+.import-post .import-post__choose button img,
+.import-post .import-post__choose button svg {
+    width: 75px;
+    height: 75px;
+}
+
+.import-post .import-post__choose button.active img {
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem var(--shadow-hover) !important;
+}
+
+.import-post .import-post__choose button.active svg {
+    border-radius: 20px;
+    box-shadow: 0 .5rem 1rem var(--shadow-hover) !important;
+}
+
+.import-post .import-post__link {
+    display: flex;
+    gap: .5rem;
+    max-width: 500px;
+}
+
+.import-post .import-post__link input {
+    flex: 1;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+}
+
+.import-post .import-post__link button {
+    border-radius: 8px;
+    padding: .5rem 1rem;
+}

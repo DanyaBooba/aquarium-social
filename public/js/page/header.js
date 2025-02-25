@@ -1,12 +1,12 @@
-let header = document.querySelector("header.header");
+let header = document.querySelector("header.header")
 
 if (header) {
-    let lastScroll = 0;
-    const defaultOffset = 200;
+    let lastScroll = 0
+    const defaultOffset = 200
 
     const scrollPosition = () =>
         window.pageYOffset || document.documentElement.scrollTop;
-    const containHide = () => header.classList.contains("hide");
+    const containHide = () => header.classList.contains("hide")
 
     window.addEventListener("scroll", () => {
         if (
@@ -15,12 +15,12 @@ if (header) {
             scrollPosition() > defaultOffset
         ) {
             //scroll down
-            header.classList.add("hide");
+            header.classList.add("hide")
         } else if (scrollPosition() < lastScroll && containHide()) {
             //scroll up
-            header.classList.remove("hide");
+            header.classList.remove("hide")
         }
 
-        lastScroll = scrollPosition();
-    });
+        lastScroll = scrollPosition()
+    })
 }

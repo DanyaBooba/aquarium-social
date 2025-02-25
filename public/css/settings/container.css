@@ -3,14 +3,12 @@
 }
 
 .container-settings .container-settings-main ul {
-    background-color: var(--settings-main-background);
+    background-color: var(--color-body-plane);
     border-radius: 12px;
-
+    box-shadow: 0 .125rem .25rem var(--shadow) !important;
     list-style: none !important;
-
     padding: 0;
     margin: 0;
-
     padding-left: 0rem;
     margin-bottom: 1rem;
 }
@@ -48,9 +46,9 @@
     display: flex;
     align-items: center;
     width: 100% !important;
-    padding-bottom: .9rem;
+    padding-bottom: 1rem;
     margin-top: 1rem;
-    border-bottom: 1px solid var(--settings-main-border);
+    border-bottom: 1px solid var(--color-body-plane-3);
 }
 
 .container-settings .container-settings-main ul li a span svg {
@@ -58,11 +56,11 @@
     height: 24px !important;
     padding: 0 !important;
     margin-left: auto !important;
-    stroke: var(--settings-icon-right) !important;
+    stroke: var(--color-body-plane-4) !important;
 }
 
 .container-settings .container-settings-main ul li:hover a span {
-    color: var(--text-color) !important;
+    color: var(--text) !important;
 }
 
 .container-settings .container-settings-main ul li a {
@@ -72,7 +70,7 @@
 
     width: 100% !important;
     text-decoration: none !important;
-    color: var(--text-color) !important;
+    color: var(--text) !important;
     padding-left: 1.5rem;
 }
 
@@ -80,7 +78,7 @@
     width: 38px;
     height: 38px;
 
-    stroke: var(--settings-main-svg) !important;
+    stroke: #ffffff !important;
     padding: .4rem;
 
     border-radius: 8px;
@@ -88,51 +86,55 @@
 }
 
 .container-settings .container-settings-main ul li a.settings-profile > svg {
-    background-color: var(--settings-background-profile);
+    background-color: var(--settings-bg-profile);
+}
+
+.container-settings .container-settings-main ul li a.settings-profile.active > svg {
+    background-color: var(--settings-bg-devices);
 }
 
 .container-settings .container-settings-main ul li a.settings-notifications > svg {
-    background-color: var(--settings-background-notifications);
+    background-color: var(--settings-bg-notifications);
 }
 
 .container-settings .container-settings-main ul li a.settings-privacy > svg {
-    background-color: var(--settings-background-privacy);
+    background-color: var(--settings-bg-privacy);
 }
 
 .container-settings .container-settings-main ul li a.settings-data > svg {
-    background-color: var(--settings-background-data);
+    background-color: var(--settings-bg-data);
 }
 
 .container-settings .container-settings-main ul li a.settings-devices > svg {
-    background-color: var(--settings-background-devices);
+    background-color: var(--settings-bg-devices);
 }
 
 .container-settings .container-settings-main ul li a.settings-personalization > svg {
-    background-color: var(--settings-background-personalization);
+    background-color: var(--settings-bg-personalization);
 }
 
 .container-settings .container-settings-main ul li a.settings-current-locale > svg {
-    background-color: var(--settings-background-privacy);
+    background-color: var(--settings-bg-privacy);
 }
 
 .container-settings .container-settings-main ul li a.settings-locale > svg {
-    background-color: var(--settings-background-profile);
+    background-color: var(--settings-bg-profile);
 }
 
 .container-settings .container-settings-main ul li a.settings-home > svg {
-    background-color: var(--settings-background-home);
+    background-color: var(--settings-bg-home);
 }
 
 .container-settings .container-settings-main ul li a.settings-exit > svg {
-    background-color: var(--settings-background-exit);
+    background-color: var(--settings-bg-exit);
 }
 
 .container-settings .container-settings-main ul li a.settings-session > svg {
-    background-color: var(--settings-background-session);
+    background-color: var(--settings-bg-session);
 }
 
 .container-settings .container-settings-main ul li a.settings-services > svg {
-    background-color: var(--settings-background-services);
+    background-color: var(--settings-bg-services);
 }
 
 /* media */
@@ -162,7 +164,7 @@
 
 @media(hover: hover) {
     .container-settings .container-settings-main ul li a:hover svg {
-        stroke: var(--svg-color-invert);
+        stroke: var(--text-invert);
     }
 
     .container-settings .container-settings-main ul li a:hover {
@@ -170,13 +172,13 @@
     }
 
     .container-settings .container-settings-main ul li:hover {
-        background-color: var(--settings-bg-hover) !important;
+        background-color: var(--color-body-plane-3) !important;
     }
 }
 
 @media(hover: none) {
     .container-settings .container-settings-main ul li a:active svg {
-        stroke: var(--svg-color-invert);
+        stroke: var(--text-invert);
     }
 
     .container-settings .container-settings-main ul li a:active {
@@ -184,6 +186,6 @@
     }
 
     .container-settings .container-settings-main ul li:active {
-        background-color: var(--settings-bg-hover) !important;
+        background-color: var(--color-body-plane-3) !important;
     }
 }

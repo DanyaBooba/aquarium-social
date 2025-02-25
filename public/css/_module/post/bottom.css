@@ -1,9 +1,25 @@
 .post-show-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
     display: flex;
-    align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    max-width: fit-content;
+    justify-content: center;
     gap: 1.5rem;
+
+    padding: .6rem 1.2rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--color-body-plane);
+    box-shadow: 0 0 .25rem var(--shadow) !important;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .post-show-bottom button {
@@ -17,12 +33,28 @@
     margin: 0;
 }
 
+.post-show-bottom svg {
+    height: 28px !important;
+    width: 28px !important;
+}
+
 .post-show-bottom button svg {
-    stroke: var(--text-color) !important;
+    stroke: var(--text) !important;
 }
 
 .post-show-bottom .post-show-bottom__like svg.heart-fill {
     fill: var(--user-bar-exit) !important;
+}
+
+@media(max-width: 767.98px) {
+    .post-show-bottom {
+        margin-bottom: 4rem;
+    }
+
+    .post-show-bottom svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
 }
 
 @media(hover: hover) {

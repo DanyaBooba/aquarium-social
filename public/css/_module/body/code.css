@@ -1,5 +1,5 @@
 code pre {
-    color: var(--text-code);
+    color: var(--text);
     margin-top: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -24,7 +24,7 @@ button.code-copy {
     margin-bottom: .5rem;
     text-decoration: none;
 
-    color: var(--text-color) !important;
+    color: var(--text) !important;
     font-size: 1rem !important;
 
     max-width: fit-content;

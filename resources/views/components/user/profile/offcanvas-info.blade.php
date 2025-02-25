@@ -2,7 +2,8 @@
     'profile' => (object) [],
 ])
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="canvasInfo" aria-labelledby="canvasInfoLabel">
+<div class="offcanvas offcanvas-bottom" data-bs-toggle="offcanvas" tabindex="-1" id="canvasInfo"
+    aria-labelledby="canvasInfoLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="canvasInfoLabel">
             {{ __('Информация о профиле') }}

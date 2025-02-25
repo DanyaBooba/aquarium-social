@@ -6,12 +6,17 @@
 
     <h1>
         {{ __('Уведомления') }}
+        <span class="text-muted">{{ $count }}</span>
     </h1>
     <div class="user-notifications">
         @if ($count == 0)
-            <p>
-                {{ __('Уведомлений нет.') }}
-            </p>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+                <img src="/img/illustrations/mail-2.png" alt="Уведомлений нет"
+                    style="max-width: 150px; margin-top: 1rem; margin-bottom: .5rem;">
+                <p>
+                    {{ __('Уведомлений нет.') }}
+                </p>
+            </div>
         @else
             @foreach ($notifications as $item)
                 <x-user.notifications.item :i="$loop->iteration" :header="$item->title" :text="$item->message" />

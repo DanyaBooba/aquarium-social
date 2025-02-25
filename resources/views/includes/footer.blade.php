@@ -12,9 +12,9 @@
             </div>
             <div class="footer__language">
                 <a href="{{ route('main.setlocale', 'ru') }}"
-                    class="{{ footer_locale_active_link('ru') }}">{{ __('RU') }}</a>
+                    class="{{ footer_locale_active_link('ru') }}">{{ __('ru') }}</a>
                 <a href="{{ route('main.setlocale', 'en') }}"
-                    class="{{ footer_locale_active_link('en') }}">{{ __('EN') }}</a>
+                    class="{{ footer_locale_active_link('en') }}">{{ __('en') }}</a>
             </div>
         </div>
     </div>

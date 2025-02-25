@@ -67,18 +67,18 @@ trix-toolbar .trix-dialog--link {
 }
 
 trix-toolbar .trix-dialog {
-    background-color: var(--addpost-dialog-bg) !important;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    background-color: var(--color-body-plane) !important;
+    box-shadow: 0 .5rem 1rem var(--shadow-hover) !important;
     border-radius: 6px !important;
     border-top: none !important;
     padding: 1rem !important;
 }
 
 trix-toolbar .trix-dialog input[type=button] {
-    color: var(--text-color) !important;
+    color: var(--text) !important;
     border: none !important;
     font-size: 14px !important;
-    background-color: var(--addpost-button-link-bg) !important;
+    background-color: var(--color-body-plane-3) !important;
     padding: .5rem 1rem !important;
 }
 
@@ -87,13 +87,13 @@ trix-toolbar .trix-dialog input[data-trix-method=removeAttribute] {
 }
 
 trix-toolbar .trix-dialog input[type=url] {
-    color: var(--text-color) !important;
+    color: var(--text) !important;
     font-size: 14px !important;
-    border: .1rem solid var(--form-input-border);
+    border: .1rem solid var(--header-border);
 }
 
 trix-toolbar .trix-button.trix-active {
-    background-color: var(--trix-button-accent) !important;
+    background-color: var(--text-link-hover) !important;
     border-radius: 4px;
 }
 
@@ -108,11 +108,11 @@ trix-toolbar .trix-button-group button::before {
 }
 
 trix-editor {
-    border-radius: 6px !important;
+    border-radius: 8px !important;
     min-height: 15rem !important;
-    background-color: var(--form-input-background) !important;
+    background-color: var(--color-body-plane) !important;
     padding: .5rem .75rem !important;
-    border: .1rem solid var(--form-input-border) !important;
+    border: .1rem solid var(--header-border) !important;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
@@ -122,8 +122,9 @@ trix-editor:focus {
 }
 
 form:has(trix-editor) input {
-    border-radius: 6px !important;
-    background-color: var(--form-input-background) !important;
+    border-radius: 8px !important;
+    background-color: var(--color-body-plane) !important;
+    border-color: var(--header-border) !important;
     padding-top: .5rem !important;
     padding-bottom: .5rem !important;
 }

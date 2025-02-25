@@ -52,15 +52,15 @@
     <meta name="color-scheme" content="light dark">
     @stack('meta')
 
-    <link rel="stylesheet" id="css.light"
+    <link rel="stylesheet"
         href="{{ asset('css/@@light/light-' . (session('theme') ? session('theme') : 'default') . '.css') }}"
-        media="(prefers-color-scheme: light)">
+        media="(prefers-color-scheme: light)" id="stylesheetlight">
     <link rel="stylesheet" id="css.light" href="{{ asset('css/@@light/light.css') }}"
         media="(prefers-color-scheme: light)">
 
-    <link rel="stylesheet" id="css.dark"
+    <link rel="stylesheet"
         href="{{ asset('css/@@dark/dark-' . (session('theme_dark') ? session('theme_dark') : 'default') . '.css') }}"
-        media="(prefers-color-scheme: dark)">
+        media="(prefers-color-scheme: dark)" id="stylesheetdark">
     <link rel="stylesheet" id="css.dark" href="{{ asset('css/@@dark/dark.css') }}"
         media="(prefers-color-scheme: dark)">
 
@@ -74,6 +74,7 @@
 @yield('body')
 <script src="{{ asset('js/main/button.js') }}"></script>
 <script src="{{ asset('js/page/code.js') }}"></script>
+<script src="{{ asset('js/main/get-theme.js') }}"></script>
 @stack('js')
 
 </html>

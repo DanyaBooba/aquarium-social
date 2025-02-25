@@ -197,7 +197,7 @@
                     <div class="p-3">
                         <h3 class="d-flex align-items-center">
                             <span class="me-2 px-2 pt-1"
-                                style="border-radius: 4px; background-color: var(--main-list-item-1)">1.</span>
+                                style="border-radius: 4px; background-color: var(--page-main-list-item-1)">1.</span>
                             <span>
                                 {{ __('Создайте аккаунт') }}
                             </span>
@@ -211,7 +211,7 @@
                     <div class="p-3">
                         <h3 class="d-flex align-items-center">
                             <span class="me-2 px-2 pt-1"
-                                style="border-radius: 4px; background-color: var(--main-list-item-2)">2.</span>
+                                style="border-radius: 4px; background-color: var(--page-main-list-item-2)">2.</span>
                             <span>
                                 {{ __('Настройте профиль') }}
                             </span>
@@ -225,7 +225,7 @@
                     <div class="p-3">
                         <h3 class="d-flex align-items-center">
                             <span class="me-2 px-2 pt-1"
-                                style="border-radius: 4px; background-color: var(--main-list-item-3)">3.</span>
+                                style="border-radius: 4px; background-color: var(--page-main-list-item-3)">3.</span>
                             <span>
                                 {{ __('Публикации!') }}
                             </span>
@@ -274,7 +274,7 @@
             <div class="col-10 col-sm-12 col-lg-6">
                 <img src="{{ asset('img/main/img/main-world.jpg') }}" class="d-block img-fluid"
                     alt="{{ __('Воксельный подводный мир') }}" width="700"
-                    style="border-radius: 12px; box-shadow: 0 0 .25rem rgba(0, 0, 0, .075) !important;">
+                    style="border-radius: 12px; box-shadow: 0 0 .25rem var(--shadow) !important;">
             </div>
             <div class="col-lg-6">
                 <h2 class="display-5 lh-1 mb-3">{!! __('Адаптивный <nobr>веб-дизайн</nobr>') !!}</h2>

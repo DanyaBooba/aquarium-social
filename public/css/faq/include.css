@@ -24,13 +24,13 @@ div .col-7 {
 }
 
 .accordion .accordion-item {
-    background-color: var(--collapse-body-background) !important;
-    border-color: var(--collapse-border) !important;
+    background-color: var(--color-body-plane) !important;
+    border-color: var(--header-border) !important;
 }
 
 .accordion .accordion-item .accordion-header button {
-    background-color: var(--collapse-button-background) !important;
-    color: var(--text-color) !important;
+    background-color: var(--color-body-plane) !important;
+    color: var(--text) !important;
 }
 
 .accordion .accordion-item .accordion-header button::after {
@@ -59,11 +59,11 @@ div .col-7 {
     .accordion .accordion-item,
     .accordion .accordion-item .accordion-header,
     .accordion .accordion-item .accordion-header button {
-        border-radius: 8px !important;
+        border-radius: 12px !important;
     }
 
     .accordion-item:last-of-type .accordion-button.collapsed {
-        border-bottom-right-radius: 8px;
+        border-bottom-right-radius: 12px;
         border-bottom-left-radius: calc(0.25rem - 1px);
     }
 }

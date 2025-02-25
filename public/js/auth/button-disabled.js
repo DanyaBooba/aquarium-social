@@ -1,38 +1,22 @@
-let inputs = document.querySelectorAll("#signin-email form input");
-let button = document.querySelector("#signin-email form button:not(.button-submit-code)[type='submit']");
+const inputsFromButtonDisabled = document.querySelectorAll('#signin-email form input')
+const buttonToDisabled = document.querySelector('#signin-email form button:not(.button-submit-code)[type="submit"]')
 
 function checkFormInput() {
-    let status = true;
+    let status = true
+    inputsFromButtonDisabled.forEach(input => {
+        if (['email', 'password', 'text'].includes(input.type) && input.value.length <= 2) status = false
+        if (input.type === 'checkbox' && input.value === 'privacy' && !input.checked) status =  false
+    })
 
-    inputs.forEach((input) => {
-        if (
-            input.type === "email" ||
-            input.type === "password" ||
-            input.type === "text"
-        ) {
-            if (input.value.length <= 2) {
-                status = false;
-            }
-        }
-
-        if (input.type === "checkbox" && input.value === "privacy") {
-            if (input.checked === false) {
-                status = false;
-            }
-        }
-    });
-
-    return status;
+    return status
 }
 
 function checkOnInput() {
-    let check = checkFormInput();
+    if (!buttonToDisabled) return
 
-    if (button) {
-        check
-            ? button.removeAttribute("disabled")
-            : button.setAttribute("disabled", true);
-    }
+    checkFormInput()
+            ? buttonToDisabled.removeAttribute('disabled')
+            : buttonToDisabled.setAttribute('disabled', true)
 }
 
 checkOnInput()

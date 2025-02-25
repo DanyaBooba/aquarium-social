@@ -33,10 +33,10 @@
         padding-right: 0 !important;
     }
 
-    .addpost-container-addpost {
+    /* .addpost-container-addpost {
         display: flex;
         flex-direction: column-reverse;
-    }
+    } */
 
     .addpost-container-addpost form {
         margin-bottom: 2rem;

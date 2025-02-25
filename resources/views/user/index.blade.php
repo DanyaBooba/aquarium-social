@@ -28,5 +28,5 @@
 @endsection
 
 @push('js')
-    <script src={{ asset('js/user/share-link.js') }}></script>
+    <script src={{ asset('js/user/toasts.js') }}></script>
 @endpush

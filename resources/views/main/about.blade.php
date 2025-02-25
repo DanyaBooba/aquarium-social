@@ -4,26 +4,24 @@
 
 @section('simple.content')
     <div class="main-lending">
-        <x-lending.logo />
+        <a href="/" aria-label="Перейти в Аквариум">
+            <x-lending.logo />
+        </a>
         <p class="text-center mt-4 fs-3">
-            {{ __('Социальная сеть с открытым кодом') }}
+            {{ __('Новая социальная сеть') }}
         </p>
     </div>
     <div class="row" style="margin-top: 6rem;">
         <div class="col">
             <p class="display-1">🐠</p>
             <p class="fs-5" style="line-height: 180%">
-                {!! __(
-                    'Аквариум — это место, где вы можете создать свой мир, отражающий вашу личность, интересы <nobr>и уникальность</nobr>.',
-                ) !!}
+                {!! __('Аквариум — это публикация постов и ведение профиля.') !!}
             </p>
         </div>
         <div class="col text-center">
             <p class="display-1">🎨</p>
             <p class="fs-5" style="line-height: 180%">
-                {!! __(
-                    'Меняйте свой профиль, используя различные картинки <nobr>и элементы</nobr> дизайна, чтобы создать визуальное представление <nobr>о себе</nobr>.',
-                ) !!}
+                {!! __('Меняйте свой профиль по вкусу.') !!}
             </p>
         </div>
     </div>
@@ -31,22 +29,20 @@
         <div class="col">
             <p class="display-1">🥳</p>
             <p class="fs-5" style="line-height: 180%">
-                {!! __(
-                    'Аквариум удобно работает <nobr>в вебе</nobr> <nobr>и на</nobr> мобильных устройствах, доставляя только положительные эмоции.',
-                ) !!}
+                {!! __('Адаптация для десктопа, мобильных, поддержка людей с ОВЗ, светлая и темная тема.') !!}
             </p>
         </div>
         <div class="col text-center">
             <p class="display-1">👫</p>
             <p class="fs-5" style="line-height: 180%">
-                {{ __('В соцсети зарегистрировано более 95-ти человек. И каждый день людей становится все больше.') }}
+                {{ __('Аудитория более 100 человек.') }}
             </p>
         </div>
     </div>
     <div style="margin-top: 5rem">
-        <h2 class="display-2 mb-5">{{ __('Цифры') }}</h2>
+        <h2 class="display-2 mb-5">{{ __('Статистика') }}</h2>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <svg xmlns="http://www.w3.org/2000/svg" class="me-2" viewBox="0 0 24 24" fill="none"
                         stroke="var(--text-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -55,13 +51,13 @@
                         <circle cx="9" cy="7" r="4" />
                         <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
                         <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                    </svg> <span class="display-3 text-success" style="margin-top: .5rem">95</span>
+                    </svg> <span class="display-3 text-success" style="margin-top: .5rem">100</span>
                 </span>
                 <span class="container-simple-numbers-text">{{ __('человек зарегистрировано') }}</span>
             </h3>
         </div>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <svg xmlns="http://www.w3.org/2000/svg" class="me-2" viewBox="0 0 24 24" fill="none"
                         stroke="var(--text-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -71,25 +67,11 @@
                         <line x1="15" x2="3" y1="12" y2="12" />
                     </svg> <span class="display-3 text-success" style="margin-top: .5rem">5&#x2009;000</span>
                 </span>
-                <span class="container-simple-numbers-text">{{ __('просмотров') }}</span>
+                <span class="container-simple-numbers-text">{{ __('просмотров страниц за год') }}</span>
             </h3>
         </div>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
-                <span class="d-flex align-items-center container-simple-numbers">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="me-1" viewBox="0 0 24 24" fill="none"
-                        stroke="var(--text-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-users">
-                        <line x1="19" x2="5" y1="5" y2="19" />
-                        <circle cx="6.5" cy="6.5" r="2.5" />
-                        <circle cx="17.5" cy="17.5" r="2.5" />
-                    </svg> <span class="display-3 text-success" style="margin-top: .5rem">95</span>
-                </span>
-                <span class="container-simple-numbers-text">{{ __('пользователей подтвердили почту') }}</span>
-            </h3>
-        </div>
-        <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <svg xmlns="http://www.w3.org/2000/svg" class="me-1" viewBox="0 0 24 24" fill="none"
                         stroke="var(--text-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -106,9 +88,9 @@
         </div>
     </div>
     <div style="margin-top: 5rem">
-        <h2 class="display-2 mb-5">{{ __('Планы на 24/25 год') }}</h2>
+        <h2 class="display-2 mb-5">{{ __('Планы на 2025 год') }}</h2>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <span class="display-3 text-success">{{ __('Android/iOS') }}</span>
                 </span>
@@ -116,7 +98,7 @@
             </h3>
         </div>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <span class="display-3 text-success">{{ __('OAuth') }}</span>
                 </span>
@@ -125,9 +107,9 @@
         </div>
     </div>
     <div style="margin-top: 5rem">
-        <h2 class="display-2 mb-5">{{ __('Реализовали за всё время') }}</h2>
+        <h2 class="display-2 mb-5">{{ __('Уже реализовано') }}</h2>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <span class="display-3 text-success">{{ __('Обновленный') }}</span>
                 </span>
@@ -135,7 +117,7 @@
             </h3>
         </div>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <span class="display-3 text-success">{{ __('Laravel') }}</span>
                 </span>
@@ -143,7 +125,7 @@
             </h3>
         </div>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <span class="display-3 text-success">{{ __('API') }}</span>
                 </span>
@@ -151,7 +133,7 @@
             </h3>
         </div>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <span class="display-3 text-success">{{ __('OAuth') }}</span>
                 </span>
@@ -159,7 +141,7 @@
             </h3>
         </div>
         <div class="py-3">
-            <h3 class="d-flex flex-wrap">
+            <h3 class="d-flex flex-wrap flex-column">
                 <span class="d-flex align-items-center container-simple-numbers">
                     <span class="display-3 text-success">{{ __('Записи') }}</span>
                 </span>

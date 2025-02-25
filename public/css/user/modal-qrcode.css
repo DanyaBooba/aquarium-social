@@ -26,7 +26,7 @@
 
 .modal.modal-qrcode .modal-dialog .modal-content {
     max-width: 400px;
-    background-color: var(--modal-background);
+    background-color: var(--color-body-plane);
 
     border: none !important;
     border-radius: 12px;
@@ -66,8 +66,8 @@
     border-radius: 8px;
 
     color: var(--text-invert);
-    background-color: var(--user-qrcode-button-bg);
-    border-color: var(--user-qrcode-button-bg);
+    background-color: var(--accent);
+    border-color: var(--accent);
 }
 
 /* media */
@@ -82,15 +82,15 @@
 @media(hover: hover) {
     .modal.modal-qrcode .modal-dialog .modal-content .modal-footer button:hover {
         color: var(--text-invert);
-        background-color: var(--user-qrcode-button-bg-hover);
-        border-color: var(--user-qrcode-button-bg-hover);
+        background-color: var(--accent-2);
+        border-color: var(--accent-2);
     }
 }
 
 @media(hover: none) {
     .modal.modal-qrcode .modal-dialog .modal-content .modal-footer button:active {
         color: var(--text-invert);
-        background-color: var(--user-qrcode-button-bg-hover);
-        border-color: var(--user-qrcode-button-bg-hover);
+        background-color: var(--accent-2);
+        border-color: var(--accent-2);
     }
 }

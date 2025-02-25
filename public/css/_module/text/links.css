@@ -1,5 +1,5 @@
 a {
-    color: var(--text-color) !important;
+    color: var(--text) !important;
     text-decoration-thickness: .05rem !important;
     text-underline-offset: .3rem;
     text-decoration-color: var(--text-link-underline) !important;

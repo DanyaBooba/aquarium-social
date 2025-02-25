@@ -1,13 +1,14 @@
 table tr td, th {
-    color: var(--text-color) !important;
+    color: var(--text) !important;
 }
 
 table.table-hover tbody tr:hover {
-    background-color: var(--table-tr-hover) !important;
+    background-color: var(--header-border) !important;
+    --bs-table-accent-bg: transparent !important;
 }
 
 table {
-    border-color: var(--table-border) !important;
+    border-color: var(--header-border) !important;
     margin-bottom: 1rem;
 }
 

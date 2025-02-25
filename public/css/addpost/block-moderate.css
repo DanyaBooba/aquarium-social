@@ -5,7 +5,7 @@
     background-color: var(--addpost-moderate-bg);
     padding: 1rem;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .addpost-moderate p {
@@ -14,8 +14,8 @@
 }
 
 .addpost-moderate svg {
-    width: auto;
-    height: 42px;
+    width: 24px;
+    height: 24px;
 }
 
 @media(max-width: 767.98px) {

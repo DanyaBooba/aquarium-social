@@ -4,10 +4,12 @@
 
 .container-settings .text-title {
     text-transform: uppercase;
+    font-family: Inter-Bold !important;
     color: var(--text-muted);
-    margin-bottom: .75rem;
-    font-size: .875rem;
-    letter-spacing: 1px;
+    margin-bottom: .5rem;
+    padding-left: 12px;
+    font-size: .8rem;
+    letter-spacing: 1.5px;
 }
 
 .container-settings form .input-password div label {
@@ -28,7 +30,7 @@
 }
 
 .col-load {
-    background-color: var(--form-input-background) !important;
+    background-color: var(--color-body-plane) !important;
     border-radius: 12px;
     height: 130px !important;
     width: 130px;
@@ -74,15 +76,15 @@
     border-radius: 12px;
 
     color: var(--text-muted);
-    background-color: var(--form-input-background);
+    background-color: var(--color-body-plane);
 }
 
 .container-settings form.form-settings-image .row.row-settings-avatar .col button:focus {
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .container-settings form.form-settings-image .row.row-settings-avatar .col button:focus p {
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .container-settings form.form-settings-image .row.row-settings-avatar .col button svg {
@@ -92,7 +94,7 @@
 }
 
 .container-settings form.form-settings-image .row.row-settings-avatar .col label {
-    background-color: var(--form-input-background) !important;
+    background-color: var(--color-body-plane) !important;
     border-radius: 50%;
 }
 
@@ -119,7 +121,7 @@
 }
 
 .container-settings form.form-settings-image .col input:is(:checked, :focus, :focus-within, :focus-visible) + label {
-    outline: 3px solid var(--settings-image-active);
+    outline: 3px solid var(--text-link-hover);
 }
 
 .container-settings form.form-settings-image button[type="submit"] {
@@ -151,29 +153,27 @@
 }
 
 .container-settings form:not(.form-settings-image) div:has(input):not(.input-password) {
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
 }
 
 .container-settings form div input:not(:checked)[role="switch"] {
-    background-color: var(--form-input-background);
+    background-color: var(--color-body-plane);
 }
 
 .container-settings form div input[type="text"],
 .container-settings form div input[type="email"],
 .container-settings form div input[type="password"] {
-    background-color: var(--form-input-background) !important;
-    border-radius: 8px;
-
+    background-color: var(--color-body-plane) !important;
+    border-radius: 12px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    margin-bottom: .25rem;
+    margin-bottom: .3rem;
 }
 
 .container-settings form div p {
     color: var(--text-muted);
     font-size: .875rem;
     margin-bottom: 0;
+    padding-left: 12px;
 }
 
 .container-settings form button[type="submit"] {
@@ -183,7 +183,7 @@
 }
 
 .container-settings .settings-form-block {
-    background-color: var(--settings-main-background);
+    background-color: var(--color-body-plane);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1rem;
@@ -197,19 +197,19 @@
     }
 
     .container-settings form.form-settings-image .row.row-settings-avatar .col button:hover {
-        color: var(--text-color);
+        color: var(--text);
     }
 
     .container-settings form.form-settings-image .row.row-settings-avatar .col button:hover p {
-        color: var(--text-color);
+        color: var(--text);
     }
 
     .col-load:hover label {
-        color: var(--text-color) !important;
+        color: var(--text) !important;
     }
 
     .col-load:hover label svg {
-        stroke: var(--text-color);
+        stroke: var(--text);
     }
 }
 
@@ -219,11 +219,11 @@
     }
 
     .container-settings form.form-settings-image .row.row-settings-avatar .col button:active {
-        color: var(--text-color);
+        color: var(--text);
     }
 
     .container-settings form.form-settings-image .row.row-settings-avatar .col button:active p {
-        color: var(--text-color);
+        color: var(--text);
     }
 }
 

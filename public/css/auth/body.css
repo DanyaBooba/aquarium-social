@@ -21,13 +21,11 @@ body {
 .form-signup-display {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
     padding: 3rem;
 }
 
 .form-signup-logo {
-    fill: var(--svg-color);
+    fill: var(--text);
     max-width: 300px;
 }
 

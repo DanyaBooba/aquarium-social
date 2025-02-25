@@ -12,7 +12,7 @@
 .top-info-bar .top-info-bar-content {
     padding: .5rem .5rem;
 
-    background-color: var(--body-bg-alpha);
+    background-color: var(--body-alpha);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 

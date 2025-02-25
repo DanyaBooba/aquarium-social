@@ -1,0 +1,11 @@
+.div-has-back {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.div-has-back svg {
+    width: 44px;
+    height: 44px;
+}

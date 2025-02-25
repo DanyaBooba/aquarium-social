@@ -1,11 +1,10 @@
-let buttonTop = document.getElementById("button-top");
+const buttonTop = document.getElementById('button-top')
 
-window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 250) {
-        buttonTop.classList.remove("button-top-disabled");
-        buttonTop.classList.add("button-top-active");
-    } else {
-        buttonTop.classList.add("button-top-disabled");
-        buttonTop.classList.remove("button-top-active");
-    }
-});
+function buttonTopClass(status) {
+    return status ? 'button-top-active' : 'button-top-disabled'
+}
+
+window.addEventListener('scroll', function () {
+    buttonTop.classList.add(buttonTopClass(window.pageYOffset > 250))
+    buttonTop.classList.remove(buttonTopClass(window.pageYOffset <= 250))
+})

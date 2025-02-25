@@ -19,7 +19,7 @@
 
         <swd-pin-field validate="0123456789" class="digits6" length="6" name="pin" id="6digits"></swd-pin-field>
 
-        <button class="btn btn-primary py-3 mt-3 button-submit-code" type="submit">{{ __('Войти по коду') }}</button>
+        <button class="btn btn-primary py-3 mt-4 button-submit-code" type="submit">{{ __('Войти по коду') }}</button>
     </form>
 
     <a href="{{ route('auth.signin.email') }}" class="d-flex justify-content-center mt-4 mb-5 text-decoration-none">
@@ -35,5 +35,5 @@
 
 @push('js')
     <script src={{ asset('js/auth/6-digits.js') }}></script>
-    <script type="module" src="{{ asset('js/pin-field.js') }}"></script>
+    <script type="module" src="{{ asset('js/module/pinfield.js') }}"></script>
 @endpush
